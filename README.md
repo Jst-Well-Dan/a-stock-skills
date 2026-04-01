@@ -171,4 +171,4 @@ git clone https://github.com/<your-org>/a-stock-skills
 
 ## 开源协议
 
-MIT © [your name here]
+MIT © Jst-Well-Dan
