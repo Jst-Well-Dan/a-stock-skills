@@ -1,0 +1,1140 @@
+# AKShare 完整接口目录
+> 共 1086 个接口。格式：`函数名(参数)` → 中文说明。必填参数无括号，选填参数用 `[...]`。
+> 确定函数后，前往对应域文件查阅完整参数说明：`references/domains/<域名>.md`
+
+## STOCK (401 个)
+- `stock_a_all_pb()` → 全部A股-等权重市净率、中位数市净率
+- `stock_a_below_net_asset_statistics([symbol='全部A股'])` → 破净股统计历史走势
+- `stock_a_code_to_symbol([symbol='000300'])` → 输入股票代码判断股票市场
+- `stock_a_congestion_lg()` → 乐咕乐股-大盘拥挤度
+- `stock_a_gxl_lg([symbol='上证A股'])` → 乐咕乐股-股息率-A 股股息率
+- `stock_a_high_low_statistics([symbol='all'])` → 乐咕乐股-创新高、新低的股票数量
+- `stock_a_ttm_lyr()` → 全部 A 股-等权重市盈率、中位数市盈率
+- `stock_account_statistics_em()` → 东方财富网-数据中心-特色数据-股票账户统计
+- `stock_add_stock([symbol='688166'])` → 新浪财经-发行与分配-增发
+- `stock_allotment_cninfo([symbol='600030'], [start_date='19700101'], [end_date='22220222'])` → 巨潮资讯-个股-配股实施方案
+- `stock_analyst_detail_em([analyst_id='11000200926'], [indicator='最新跟踪成分股'])` → 东方财富网-数据中心-研究报告-东方财富分析师指数-东方财富分析师指数2020最新排行-分析师详情
+- `stock_analyst_rank_em([year='2024'])` → 东方财富网-数据中心-研究报告-东方财富分析师指数-东方财富分析师指数
+- `stock_balance_sheet_by_report_delisted_em([symbol='SZ000013'])` → 东方财富-股票-财务分析-资产负债表-已退市股票-按报告期
+- `stock_balance_sheet_by_report_em([symbol='SH600519'])` → 东方财富-股票-财务分析-资产负债表-按报告期
+- `stock_balance_sheet_by_yearly_em([symbol='SH600036'])` → 东方财富-股票-财务分析-资产负债表-按年度
+- `stock_bid_ask_em([symbol='000001'])` → 东方财富-行情报价
+- `stock_bj_a_spot_em()` → 东方财富网-京 A 股-实时行情
+- `stock_board_change_em()` → 东方财富-行情中心-当日板块异动详情
+- `stock_board_concept_cons_em([symbol='融资融券'])` → 东方财富-沪深板块-概念板块-板块成份
+- `stock_board_concept_hist_em([symbol='绿色电力'], [period='daily'], [start_date='20220101'], [end_date='20221128'], [adjust=''])` → 东方财富网-沪深板块-概念板块-历史行情
+- `stock_board_concept_hist_min_em([symbol='长寿药'], [period='5'])` → 东方财富网-沪深板块-概念板块-分时历史行情
+- `stock_board_concept_index_ths([symbol='阿里巴巴概念'], [start_date='20200101'], [end_date='20250228'])` → 同花顺-板块-概念板块-指数数据
+- `stock_board_concept_info_ths([symbol='阿里巴巴概念'])` → 同花顺-板块-概念板块-板块简介
+- `stock_board_concept_name_em()` → 东方财富网-行情中心-沪深京板块-概念板块-名称
+- `stock_board_concept_name_ths()` → 同花顺-板块-概念板块-概念
+- `stock_board_concept_spot_em([symbol='可燃冰'])` → 东方财富网-行情中心-沪深京板块-概念板块-实时行情
+- `stock_board_concept_summary_ths()` → 同花顺-数据中心-概念板块-概念时间表
+- `stock_board_industry_cons_em([symbol='小金属'])` → 东方财富网-沪深板块-行业板块-板块成份
+- `stock_board_industry_hist_em([symbol='小金属'], [start_date='20211201'], [end_date='20220401'], [period='日k'], [adjust=''])` → 东方财富网-沪深板块-行业板块-历史行情
+- `stock_board_industry_hist_min_em([symbol='小金属'], [period='5'])` → 东方财富网-沪深板块-行业板块-分时历史行情
+- `stock_board_industry_index_ths([symbol='元件'], [start_date='20200101'], [end_date='20240108'])` → 同花顺-板块-行业板块-指数数据
+- `stock_board_industry_info_ths([symbol='半导体'])` → 同花顺-板块-行业板块-板块简介
+- `stock_board_industry_name_em()` → 东方财富网-沪深板块-行业板块-名称
+- `stock_board_industry_name_ths()` → 同花顺-板块-行业板块-行业
+- `stock_board_industry_spot_em([symbol='小金属'])` → 东方财富网-沪深板块-行业板块-实时行情
+- `stock_board_industry_summary_ths()` → 同花顺-数据中心-行业板块-同花顺行业一览表
+- `stock_buffett_index_lg()` → 乐估乐股-底部研究-巴菲特指标
+- `stock_cash_flow_sheet_by_quarterly_em([symbol='SH600519'])` → 东方财富-股票-财务分析-现金流量表-按单季度
+- `stock_cash_flow_sheet_by_report_delisted_em([symbol='SZ000013'])` → 东方财富-股票-财务分析-现金流量表-已退市股票-按报告期
+- `stock_cash_flow_sheet_by_report_em([symbol='SH600519'])` → 东方财富-股票-财务分析-现金流量表-按报告期
+- `stock_cash_flow_sheet_by_yearly_em([symbol='SH600519'])` → 东方财富-股票-财务分析-现金流量表-按年度
+- `stock_cg_equity_mortgage_cninfo([date='20210930'])` → 巨潮资讯-数据中心-专题统计-公司治理-股权质押
+- `stock_cg_guarantee_cninfo([symbol='全部'], [start_date='20180630'], [end_date='20210927'])` → 巨潮资讯-数据中心-专题统计-公司治理-对外担保
+- `stock_cg_lawsuit_cninfo([symbol='全部'], [start_date='20180630'], [end_date='20210927'])` → 巨潮资讯-数据中心-专题统计-公司治理-公司诉讼
+- `stock_changes_em([symbol='大笔买入'])` → 东方财富-行情中心-盘口异动
+- `stock_circulate_stock_holder([symbol='600000'])` → 新浪财经-股东股本-流通股东
+- `stock_classify_sina([symbol='热门概念'])` → 按 symbol 分类后的股票
+- `stock_comment_detail_scrd_desire_em([symbol='600000'])` → 东方财富网-数据中心-特色数据-千股千评-市场热度-市场参与意愿
+- `stock_comment_detail_scrd_focus_em([symbol='600000'])` → 东方财富网-数据中心-特色数据-千股千评-市场热度-用户关注指数
+- `stock_comment_detail_zhpj_lspf_em([symbol='600000'])` → 东方财富网-数据中心-特色数据-千股千评-综合评价-历史评分
+- `stock_comment_detail_zlkp_jgcyd_em([symbol='600000'])` → 东方财富网-数据中心-特色数据-千股千评-主力控盘-机构参与度
+- `stock_comment_em()` → 东方财富网-数据中心-特色数据-千股千评
+- `stock_concept_cons_futu([symbol='特朗普概念股'])` → 富途牛牛-主题投资-概念板块-成分股
+- `stock_concept_fund_flow_hist([symbol='数据要素'])` → 东方财富网-数据中心-资金流向-概念资金流-概念历史资金流
+- `stock_cy_a_spot_em()` → 东方财富网-创业板-实时行情
+- `stock_cyq_em([symbol='000001'], [adjust=''])` → 东方财富网-概念板-行情中心-日K-筹码分布
+- `stock_dividend_cninfo([symbol='600009'])` → 巨潮资讯-个股-历史分红
+- `stock_dxsyl_em()` → 东方财富网-数据中心-新股申购-打新收益率
+- `stock_dzjy_hygtj([symbol='近三月'])` → 东方财富网-数据中心-大宗交易-活跃 A 股统计
+- `stock_dzjy_hyyybtj([symbol='近3日'])` → 东方财富网-数据中心-大宗交易-活跃营业部统计
+- `stock_dzjy_mrmx([symbol='基金'], [start_date='20220104'], [end_date='20220104'])` → 东方财富网-数据中心-大宗交易-每日明细
+- `stock_dzjy_mrtj([start_date='20220105'], [end_date='20220105'])` → 东方财富网-数据中心-大宗交易-每日统计
+- `stock_dzjy_sctj()` → 东方财富网-数据中心-大宗交易-市场统计
+- `stock_dzjy_yybph([symbol='近三月'])` → 东方财富网-数据中心-大宗交易-营业部排行
+- `stock_ebs_lg()` → 乐咕乐股-股债利差
+- `stock_esg_hz_sina()` → 新浪财经-ESG评级中心-ESG评级-华证指数
+- `stock_esg_msci_sina()` → 新浪财经-ESG评级中心-ESG评级-MSCI
+- `stock_esg_rate_sina()` → 新浪财经-ESG评级中心-ESG评级-ESG评级数据
+- `stock_esg_rft_sina()` → 新浪财经-ESG评级中心-ESG评级-路孚特
+- `stock_esg_zd_sina()` → 新浪财经-ESG评级中心-ESG评级-秩鼎
+- `stock_fhps_detail_em([symbol='300073'])` → 东方财富网-数据中心-分红送配-分红送配详情
+- `stock_fhps_detail_ths([symbol='603444'])` → 同花顺-分红情况
+- `stock_fhps_em([date='20231231'])` → 东方财富网-数据中心-年报季报-分红送配
+- `stock_financial_abstract([symbol='600004'])` → 新浪财经-财务报表-关键指标
+- `stock_financial_abstract_new_ths([symbol='000063'], [indicator='按报告期'])` → 同花顺-财务指标-重要指标
+- `stock_financial_abstract_ths([symbol='000063'], [indicator='按报告期'])` → 同花顺-财务指标-主要指标
+- `stock_financial_analysis_indicator([symbol='600004'], [start_year='1900'])` → 新浪财经-财务分析-财务指标
+- `stock_financial_analysis_indicator_em([symbol='301389.SZ'], [indicator='按报告期'])` → 东方财富-A股-财务分析-主要指标
+- `stock_financial_benefit_new_ths([symbol='000063'], [indicator='按报告期'])` → 同花顺-财务指标-利润表
+- `stock_financial_benefit_ths([symbol='000063'], [indicator='按报告期'])` → 同花顺-财务指标-利润表
+- `stock_financial_cash_new_ths([symbol='000063'], [indicator='按报告期'])` → 同花顺-财务指标-现金流量表
+- `stock_financial_cash_ths([symbol='000063'], [indicator='按报告期'])` → 同花顺-财务指标-现金流量表
+- `stock_financial_debt_new_ths([symbol='000063'], [indicator='按报告期'])` → 同花顺-财务指标-资产负债表
+- `stock_financial_debt_ths([symbol='000063'], [indicator='按报告期'])` → 同花顺-财务指标-资产负债表
+- `stock_financial_hk_analysis_indicator_em([symbol='00853'], [indicator='年度'])` → 东方财富-港股-财务分析-主要指标
+- `stock_financial_hk_report_em([stock='00700'], [symbol='资产负债表'], [indicator='年度'])` → 东方财富-港股-财务报表-三大报表
+- `stock_financial_report_sina([stock='sh600600'], [symbol='资产负债表'])` → 新浪财经-财务报表-三大报表
+- `stock_financial_us_analysis_indicator_em([symbol='TSLA'], [indicator='年报'])` → 东方财富-美股-财务分析-主要指标
+- `stock_financial_us_report_em([stock='TSLA'], [symbol='资产负债表'], [indicator='年报'])` → 东方财富-美股-财务分析-三大报表
+- `stock_fund_flow_big_deal()` → 同花顺-数据中心-资金流向-大单追踪
+- `stock_fund_flow_concept([symbol='即时'])` → 同花顺-数据中心-资金流向-概念资金流
+- `stock_fund_flow_individual([symbol='即时'])` → 同花顺-数据中心-资金流向-个股资金流
+- `stock_fund_flow_industry([symbol='即时'])` → 同花顺-数据中心-资金流向-行业资金流
+- `stock_fund_stock_holder([symbol='600004'])` → 新浪财经-股本股东-基金持股
+- `stock_gddh_em()` → 东方财富网-数据中心-股东大会
+- `stock_gdfx_free_holding_analyse_em([date='20230930'])` → 东方财富网-数据中心-股东分析-股东持股分析-十大流通股东
+- `stock_gdfx_free_holding_change_em([date='20210930'])` → 东方财富网-数据中心-股东分析-股东持股变动统计-十大流通股东
+- `stock_gdfx_free_holding_detail_em([date='20210930'])` → 东方财富网-数据中心-股东分析-股东持股明细-十大流通股东
+- `stock_gdfx_free_holding_statistics_em([date='20210630'])` → 东方财富网-数据中心-股东分析-股东持股统计-十大流通股东
+- `stock_gdfx_free_holding_teamwork_em([symbol='社保'])` → 东方财富网-数据中心-股东分析-股东协同-十大流通股东
+- `stock_gdfx_free_top_10_em([symbol='sh688686'], [date='20240930'])` → 东方财富网-个股-十大流通股东
+- `stock_gdfx_holding_analyse_em([date='20230331'])` → 东方财富网-数据中心-股东分析-股东持股分析-十大股东
+- `stock_gdfx_holding_change_em([date='20210930'])` → 东方财富网-数据中心-股东分析-股东持股变动统计-十大股东
+- `stock_gdfx_holding_detail_em([date='20230331'], [indicator='个人'], [symbol='新进'])` → 东方财富网-数据中心-股东分析-股东持股明细-十大股东
+- `stock_gdfx_holding_statistics_em([date='20210930'])` → 东方财富网-数据中心-股东分析-股东持股统计-十大股东
+- `stock_gdfx_holding_teamwork_em([symbol='社保'])` → 东方财富网-数据中心-股东分析-股东协同-十大股东
+- `stock_gdfx_top_10_em([symbol='sh688686'], [date='20210630'])` → 东方财富网-个股-十大股东
+- `stock_ggcg_em([symbol='全部'])` → 东方财富网-数据中心-特色数据-高管持股
+- `stock_gpzy_distribute_statistics_bank_em()` → 东方财富网-数据中心-特色数据-股权质押-质押机构分布统计-银行
+- `stock_gpzy_distribute_statistics_company_em()` → 东方财富网-数据中心-特色数据-股权质押-质押机构分布统计-证券公司
+- `stock_gpzy_industry_data_em()` → 东方财富网-数据中心-特色数据-股权质押-上市公司质押比例-行业数据
+- `stock_gpzy_pledge_ratio_detail_em()` → 东方财富网-数据中心-特色数据-股权质押-重要股东股权质押明细
+- `stock_gpzy_pledge_ratio_em([date='20240906'])` → 东方财富网-数据中心-特色数据-股权质押-上市公司质押比例
+- `stock_gpzy_profile_em()` → 东方财富网-数据中心-特色数据-股权质押-股权质押市场概况
+- `stock_gsrl_gsdt_em([date='20230808'])` → 东方财富网-数据中心-股市日历-公司动态
+- `stock_history_dividend()` → 新浪财经-发行与分配-历史分红
+- `stock_history_dividend_detail([symbol='000002'], [indicator='分红'], [date=''])` → 新浪财经-发行与分配-分红配股详情
+- `stock_hk_company_profile_em([symbol='03900'])` → 东方财富-港股-公司资料
+- `stock_hk_daily([symbol='00981'], [adjust=''])` → 新浪财经-港股-个股的历史行情数据
+- `stock_hk_dividend_payout_em([symbol='03900'])` → 东方财富-港股-核心必读-分红派息
+- `stock_hk_famous_spot_em()` → 东方财富网-行情中心-港股市场-知名港股
+- `stock_hk_fhpx_detail_ths([symbol='0700'])` → 同花顺-港股-分红派息
+- `stock_hk_financial_indicator_em([symbol='03900'])` → 东方财富-港股-核心必读-最新指标
+- `stock_hk_ggt_components_em()` → 东方财富网-行情中心-港股市场-港股通成份股
+- `stock_hk_growth_comparison_em([symbol='03900'])` → 东方财富-港股-行业对比-成长性对比
+- `stock_hk_gxl_lg()` → 乐咕乐股-股息率-恒生指数股息率
+- `stock_hk_hist([symbol='00593'], [period='daily'], [start_date='19700101'], [end_date='22220101'], [adjust=''])` → 东方财富网-行情-港股-每日行情
+- `stock_hk_hist_min_em([symbol='01611'], [period='1'], [adjust=''], [start_date='1979-09-01 09:32:00'], [end_date='2222-01-01 09:32:00'])` → 东方财富网-行情-港股-每日分时行情
+- `stock_hk_hot_rank_detail_em([symbol='00700'])` → 东方财富-个股人气榜-历史趋势
+- `stock_hk_hot_rank_detail_realtime_em([symbol='00700'])` → 东方财富-个股人气榜-实时变动
+- `stock_hk_hot_rank_em()` → 东方财富-个股人气榜-人气榜-港股市场
+- `stock_hk_hot_rank_latest_em([symbol='00700'])` → 东方财富-个股人气榜-最新排名
+- `stock_hk_index_daily_em([symbol='HSTECF2L'])` → 东方财富网-港股-股票指数数据
+- `stock_hk_index_daily_sina([symbol='CES100'])` → 新浪财经-港股指数-历史行情数据
+- `stock_hk_index_spot_em()` → 东方财富网-行情中心-港股-指数实时行情
+- `stock_hk_index_spot_sina()` → 新浪财经-行情中心-港股指数
+- `stock_hk_indicator_eniu([symbol='hk01093'], [indicator='市盈率'])` → 亿牛网-港股指标
+- `stock_hk_main_board_spot_em()` → 东方财富网-港股-主板-实时行情
+- `stock_hk_profit_forecast_et([symbol='09999'], [indicator='盈利预测概览'])` → 经济通-公司资料-盈利预测
+- `stock_hk_scale_comparison_em([symbol='03900'])` → 东方财富-港股-行业对比-规模对比
+- `stock_hk_security_profile_em([symbol='03900'])` → 东方财富-港股-证券资料
+- `stock_hk_spot()` → 新浪财经-港股的所有港股的实时行情数据
+- `stock_hk_spot_em()` → 东方财富网-港股-实时行情
+- `stock_hk_valuation_baidu([symbol='06969'], [indicator='总市值'], [period='近一年'])` → 百度股市通-港股-财务报表-估值数据
+- `stock_hk_valuation_comparison_em([symbol='03900'])` → 东方财富-港股-行业对比-估值对比
+- `stock_hold_change_cninfo([symbol='全部'])` → 巨潮资讯-数据中心-专题统计-股东股本-股本变动
+- `stock_hold_control_cninfo([symbol='全部'])` → 巨潮资讯-数据中心-专题统计-股东股本-实际控制人持股变动
+- `stock_hold_management_detail_cninfo([symbol='增持'])` → 巨潮资讯-数据中心-专题统计-股东股本-高管持股变动明细
+- `stock_hold_management_detail_em()` → 东方财富网-数据中心-特色数据-高管持股-董监高及相关人员持股变动明细
+- `stock_hold_management_person_em([symbol='001308'], [name='吴远'])` → 东方财富网-数据中心-特色数据-高管持股-人员增减持股变动明细
+- `stock_hold_num_cninfo([date='20210630'])` → 巨潮资讯-数据中心-专题统计-股东股本-股东人数及持股集中度
+- `stock_hot_deal_xq([symbol='最热门'])` → 雪球-沪深股市-热度排行榜-分享交易排行榜
+- `stock_hot_follow_xq([symbol='最热门'])` → 雪球-沪深股市-热度排行榜-关注排行榜
+- `stock_hot_keyword_em([symbol='SZ000665'])` → 东方财富-个股人气榜-热门关键词
+- `stock_hot_rank_detail_em([symbol='SZ000665'])` → 东方财富-个股人气榜-历史趋势及粉丝特征
+- `stock_hot_rank_detail_realtime_em([symbol='SZ000665'])` → 东方财富-个股人气榜-实时变动
+- `stock_hot_rank_em()` → 东方财富-个股人气榜-人气榜
+- `stock_hot_rank_latest_em([symbol='SZ000665'])` → 东方财富-个股人气榜-最新排名
+- `stock_hot_rank_relate_em([symbol='SZ000665'])` → 东方财富-个股人气榜-相关股票
+- `stock_hot_search_baidu([symbol='A股'], [date='20250616'], [time='今日'])` → 百度股市通-热搜股票
+- `stock_hot_tweet_xq([symbol='最热门'])` → 雪球-沪深股市-热度排行榜-讨论排行榜
+- `stock_hot_up_em()` → 东方财富-个股人气榜-飙升榜
+- `stock_hsgt_board_rank_em([symbol='北向资金增持行业板块排行'], [indicator='今日'])` → 东方财富网-数据中心-沪深港通持股-行业板块排行-北向资金增持行业板块排行
+- `stock_hsgt_fund_flow_summary_em()` → 东方财富网-数据中心-资金流向-沪深港通资金流向
+- `stock_hsgt_fund_min_em([symbol='北向资金'])` → 东方财富-数据中心-沪深港通-市场概括-分时数据
+- `stock_hsgt_hist_em([symbol='北向资金'])` → 东方财富网-数据中心-资金流向-沪深港通资金流向-沪深港通历史数据
+- `stock_hsgt_hold_stock_em([market='沪股通'], [indicator='5日排行'])` → 东方财富-数据中心-沪深港通持股-个股排行
+- `stock_hsgt_individual_detail_em([symbol='002008'], [start_date='20220130'], [end_date='20220330'])` → 东方财富-数据中心-沪深港通-沪深港通持股-具体股票详情
+- `stock_hsgt_individual_em([symbol='002008'])` → 东方财富-数据中心-沪深港通-沪深港通持股-具体股票
+- `stock_hsgt_institution_statistics_em([market='北向持股'], [start_date='20220601'], [end_date='20220609'])` → 东方财富网-数据中心-沪深港通-沪深港通持股-每日机构统计
+- `stock_hsgt_sh_hk_spot_em()` → 东方财富网-行情中心-沪深港通-港股通(沪>港)-股票
+- `stock_hsgt_stock_statistics_em([symbol='北向持股'], [start_date='20240110'], [end_date='20240110'])` → 东方财富网-数据中心-沪深港通-沪深港通持股-每日个股统计
+- `stock_index_pb_lg([symbol='上证50'])` → 乐咕乐股-指数市净率
+- `stock_index_pe_lg([symbol='沪深300'])` → 乐咕乐股-指数市盈率
+- `stock_individual_basic_info_hk_xq([symbol='02097'], [token], [timeout])` → 雪球-个股-公司概况-公司简介
+- `stock_individual_basic_info_us_xq([symbol='NVDA'], [token], [timeout])` → 雪球-个股-公司概况-公司简介
+- `stock_individual_basic_info_xq([symbol='SH601127'], [token], [timeout])` → 雪球-个股-公司概况-公司简介
+- `stock_individual_fund_flow([stock='600094'], [market='sh'])` → 东方财富网-数据中心-资金流向-个股
+- `stock_individual_fund_flow_rank([indicator='5日'])` → 东方财富网-数据中心-资金流向-排名
+- `stock_individual_info_em([symbol='603777'], [timeout])` → 东方财富-个股-股票信息
+- `stock_individual_spot_xq([symbol='SH600000'], [token], [timeout])` → 雪球-行情中心-个股
+- `stock_industry_category_cninfo([symbol='巨潮行业分类标准'])` → 巨潮资讯-行业分类数据
+- `stock_industry_change_cninfo([symbol='002594'], [start_date='20091227'], [end_date='20220713'])` → 巨潮资讯-上市公司行业归属的变动情况
+- `stock_industry_clf_hist_sw()` → 申万宏源研究-行业分类-全部行业分类
+- `stock_industry_pe_ratio_cninfo([symbol='证监会行业分类'], [date='20210910'])` → 巨潮资讯-数据中心-行业分析-行业市盈率
+- `stock_info_a_code_name()` → 沪深京 A 股列表
+- `stock_info_bj_name_code()` → 北京证券交易所-股票列表
+- `stock_info_change_name([symbol='000503'])` → 新浪财经-股票曾用名
+- `stock_info_cjzc_em()` → 东方财富-财经早餐
+- `stock_info_global_cls([symbol='全部'])` → 财联社-电报
+- `stock_info_global_em()` → 东方财富-全球财经快讯
+- `stock_info_global_futu()` → 富途牛牛-快讯
+- `stock_info_global_sina()` → 新浪财经-全球财经快讯
+- `stock_info_global_ths()` → 同花顺财经-全球财经直播
+- `stock_info_sh_delist([symbol='全部'])` → 上海证券交易所-终止上市公司
+- `stock_info_sh_name_code([symbol='主板A股'])` → 上海证券交易所-股票列表
+- `stock_info_sz_change_name([symbol='全称变更'])` → 深证证券交易所-市场数据-股票数据-名称变更
+- `stock_info_sz_delist([symbol='终止上市公司'])` → 深证证券交易所-暂停上市公司-终止上市公司
+- `stock_info_sz_name_code([symbol='A股列表'])` → 深圳证券交易所-股票列表
+- `stock_inner_trade_xq()` → 雪球-行情中心-沪深股市-内部交易
+- `stock_institute_hold([symbol='20051'])` → 新浪财经-股票-机构持股一览表
+- `stock_institute_hold_detail([stock='600433'], [quarter='20201'])` → 新浪财经-股票-机构持股详情
+- `stock_institute_recommend([symbol='投资评级选股'])` → 新浪财经-机构推荐池-最新投资评级
+- `stock_institute_recommend_detail([symbol='000001'])` → 新浪财经-机构推荐池-股票评级记录
+- `stock_intraday_em([symbol='000001'])` → 东方财富-分时数据
+- `stock_intraday_sina([symbol='sz000001'], [date='20240321'])` → 新浪财经-日内分时数据
+- `stock_ipo_benefit_ths()` → 同花顺-数据中心-新股数据-IPO受益股
+- `stock_ipo_declare_em()` → 东方财富网-数据中心-新股数据-首发申报企业信息
+- `stock_ipo_hk_ths()` → 同花顺-数据中心-新股申购与中签-港股
+- `stock_ipo_info([stock='600004'])` → 新浪财经-发行与分配-新股发行
+- `stock_ipo_review_em()` → 东方财富网-数据中心-新股申购-新股上会信息
+- `stock_ipo_summary_cninfo([symbol='600030'])` → 巨潮资讯-个股-上市相关
+- `stock_ipo_ths([symbol='全部A股'])` → 同花顺-数据中心-新股申购与中签
+- `stock_ipo_tutor_em()` → 东方财富网-数据中心-新股数据-IPO辅导信息
+- `stock_irm_ans_cninfo([symbol='1513586704097333248'])` → 互动易-回答
+- `stock_irm_cninfo([symbol='002594'])` → 互动易-提问
+- `stock_jgdy_detail_em([date='20241211'])` → 东方财富网-数据中心-特色数据-机构调研-机构调研详细
+- `stock_jgdy_tj_em([date='20220101'])` → 东方财富网-数据中心-特色数据-机构调研-机构调研统计
+- `stock_js_weibo_nlp_time()` → https://datacenter.jin10.com/market
+- `stock_js_weibo_report([time_period='CNHOUR12'])` → 金十数据中心-实时监控-微博舆情报告
+- `stock_kc_a_spot_em()` → 东方财富网-科创板-实时行情
+- `stock_lh_yyb_capital()` → 同花顺-数据中心-营业部排名-资金实力最强
+- `stock_lh_yyb_control()` → 同花顺-数据中心-营业部排名-抱团操作实力
+- `stock_lh_yyb_most()` → 同花顺-数据中心-营业部排名-上榜次数最多
+- `stock_lhb_detail_daily_sina([date='20240222'])` → 龙虎榜-每日详情
+- `stock_lhb_detail_em([start_date='20230403'], [end_date='20230417'])` → 东方财富网-数据中心-龙虎榜单-龙虎榜详情
+- `stock_lhb_ggtj_sina([symbol='5'])` → 龙虎榜-个股上榜统计
+- `stock_lhb_hyyyb_em([start_date='20220324'], [end_date='20220324'])` → 东方财富网-数据中心-龙虎榜单-每日活跃营业部
+- `stock_lhb_jgmmtj_em([start_date='20240417'], [end_date='20240430'])` → 东方财富网-数据中心-龙虎榜单-机构买卖每日统计
+- `stock_lhb_jgmx_sina()` → 龙虎榜-机构席位成交明细
+- `stock_lhb_jgstatistic_em([symbol='近一月'])` → 东方财富网-数据中心-龙虎榜单-机构席位追踪
+- `stock_lhb_jgzz_sina([symbol='5'])` → 龙虎榜-机构席位追踪
+- `stock_lhb_stock_detail_date_em([symbol='600077'])` → 东方财富网-数据中心-龙虎榜单-个股龙虎榜详情-日期
+- `stock_lhb_stock_detail_em([symbol='000788'], [date='20220315'], [flag='卖出'])` → 东方财富网-数据中心-龙虎榜单-个股龙虎榜详情
+- `stock_lhb_stock_statistic_em([symbol='近一月'])` → 东方财富网-数据中心-龙虎榜单-个股上榜统计
+- `stock_lhb_traderstatistic_em([symbol='近一月'])` → 东方财富网-数据中心-龙虎榜单-营业部统计
+- `stock_lhb_yyb_detail_em([symbol='10188715'])` → 东方财富网-数据中心-龙虎榜单-营业部历史交易明细-营业部交易明细
+- `stock_lhb_yybph_em([symbol='近一月'])` → 东方财富网-数据中心-龙虎榜单-营业部排行
+- `stock_lhb_yytj_sina([symbol='5'])` → 龙虎榜-营业部上榜统计
+- `stock_lrb_em([date='20240331'])` → 东方财富-数据中心-年报季报-业绩快报-利润表
+- `stock_main_fund_flow([symbol='全部股票'])` → 东方财富网-数据中心-资金流向-主力净流入排名
+- `stock_main_stock_holder([stock='600004'])` → 新浪财经-股本股东-主要股东
+- `stock_management_change_ths([symbol='688981'])` → 同花顺-公司大事-高管持股变动
+- `stock_margin_account_info()` → 东方财富网-数据中心-融资融券-融资融券账户统计-两融账户信息
+- `stock_margin_detail_sse([date='20230922'])` → 上海证券交易所-融资融券数据-融资融券明细
+- `stock_margin_detail_szse([date='20230925'])` → 深证证券交易所-融资融券数据-融资融券交易明细
+- `stock_margin_ratio_pa([symbol='深市'], [date='20260113'])` → 融资融券-标的证券名单及保证金比例查询
+- `stock_margin_sse([start_date='20010106'], [end_date='20230922'])` → 上海证券交易所-融资融券数据-融资融券汇总
+- `stock_margin_szse([date='20240411'])` → 深圳证券交易所-融资融券数据-融资融券汇总
+- `stock_margin_underlying_info_szse([date='20221129'])` → 深圳证券交易所-融资融券数据-标的证券信息
+- `stock_market_activity_legu()` → 乐咕乐股网-赚钱效应分析
+- `stock_market_fund_flow()` → 东方财富网-数据中心-资金流向-大盘
+- `stock_market_pb_lg([symbol='上证'])` → 乐咕乐股-主板市净率
+- `stock_market_pe_lg([symbol='深证'])` → 乐咕乐股-主板市盈率
+- `stock_new_a_spot_em()` → 东方财富网-新股-实时行情
+- `stock_new_gh_cninfo()` → 巨潮资讯-数据中心-新股数据-新股过会
+- `stock_new_ipo_cninfo()` → 巨潮资讯-数据中心-新股数据-新股发行
+- `stock_news_em([symbol='603777'])` → 东方财富-个股新闻-最近 100 条新闻
+- `stock_news_main_cx()` → 财新网-财新数据通
+- `stock_notice_report([symbol='全部'], [date='20220511'])` → 东方财富网-数据中心-公告大全-沪深京 A 股公告
+- `stock_pg_em()` → 东方财富网-数据中心-新股数据-配股
+- `stock_price_js([symbol='us'])` → 美股目标价 or 港股目标价
+- `stock_profile_cninfo([symbol='600030'])` → 巨潮资讯-个股-公司概况
+- `stock_profit_forecast_em([symbol=''])` → 东方财富网-数据中心-研究报告-盈利预测
+- `stock_profit_forecast_ths([symbol='600519'], [indicator='预测年报每股收益'])` → 同花顺-盈利预测
+- `stock_profit_sheet_by_quarterly_em([symbol='SH600519'])` → 东方财富-股票-财务分析-利润表-按单季度
+- `stock_profit_sheet_by_report_delisted_em([symbol='SZ000013'])` → 东方财富-股票-财务分析-利润表-已退市股票-按报告期
+- `stock_profit_sheet_by_report_em([symbol='SH600519'])` → 东方财富-股票-财务分析-利润表-报告期
+- `stock_profit_sheet_by_yearly_em([symbol='SH600519'])` → 东方财富-股票-财务分析-利润表-按年度
+- `stock_qbzf_em()` → 东方财富网-数据中心-新股数据-增发-全部增发
+- `stock_qsjy_em([date='20200731'])` → 东方财富网-数据中心-特色数据-券商业绩月报
+- `stock_rank_cxd_ths([symbol='创月新低'])` → 同花顺-数据中心-技术选股-创新低
+- `stock_rank_cxfl_ths()` → 同花顺-数据中心-技术选股-持续放量
+- `stock_rank_cxg_ths([symbol='创月新高'])` → 同花顺-数据中心-技术选股-创新高
+- `stock_rank_cxsl_ths()` → 同花顺-数据中心-技术选股-持续缩量
+- `stock_rank_forecast_cninfo([date='20230817'])` → 巨潮资讯-数据中心-评级预测-投资评级
+- `stock_rank_ljqd_ths()` → 同花顺-数据中心-技术选股-量价齐跌
+- `stock_rank_ljqs_ths()` → 同花顺-数据中心-技术选股-量价齐升
+- `stock_rank_lxsz_ths()` → 同花顺-数据中心-技术选股-连续上涨
+- `stock_rank_lxxd_ths()` → 同花顺-数据中心-技术选股-连续下跌
+- `stock_rank_xstp_ths([symbol='500日均线'])` → 同花顺-数据中心-技术选股-向上突破
+- `stock_rank_xxtp_ths([symbol='500日均线'])` → 同花顺-数据中心-技术选股-向下突破
+- `stock_rank_xzjp_ths()` → 同花顺-数据中心-技术选股-险资举牌
+- `stock_register_all_em()` → 东方财富网-数据中心-新股数据-IPO审核信息-全部
+- `stock_register_bj()` → 东方财富网-数据中心-新股数据-IPO审核信息-北交所
+- `stock_register_cyb()` → 东方财富网-数据中心-新股数据-IPO审核信息-创业板
+- `stock_register_db()` → 东方财富网-数据中心-新股数据-IPO审核信息-达标企业
+- `stock_register_kcb()` → 东方财富网-数据中心-新股数据-IPO审核信息-科创板
+- `stock_register_sh()` → 东方财富网-数据中心-新股数据-IPO审核信息-上海主板
+- `stock_register_sz()` → 东方财富网-数据中心-新股数据-IPO审核信息-深圳主板
+- `stock_report_disclosure([market='沪深京'], [period='2021年报'])` → 巨潮资讯-首页-数据-预约披露
+- `stock_report_fund_hold([symbol='基金持仓'], [date='20210331'])` → 东方财富网-数据中心-主力数据-基金持仓
+- `stock_report_fund_hold_detail([symbol='008286'], [date='20220331'])` → 东方财富网-数据中心-主力数据-基金持仓-明细
+- `stock_repurchase_em()` → 东方财富网-数据中心-股票回购-股票回购数据
+- `stock_research_report_em([symbol='000001'])` → 东方财富网-数据中心-研究报告-个股研报
+- `stock_restricted_release_detail_em([start_date='20221202'], [end_date='20241202'])` → 东方财富网-数据中心-限售股解禁-解禁详情一览
+- `stock_restricted_release_queue_em([symbol='600000'])` → 东方财富网-数据中心-个股限售解禁-解禁批次
+- `stock_restricted_release_queue_sina([symbol='600000'])` → 新浪财经-发行分配-限售解禁
+- `stock_restricted_release_stockholder_em([symbol='600000'], [date='20200904'])` → 东方财富网-数据中心-个股限售解禁-解禁股东
+- `stock_restricted_release_summary_em([symbol='全部股票'], [start_date='20221101'], [end_date='20221209'])` → 东方财富网-数据中心-特色数据-限售股解禁
+- `stock_sector_detail([sector='gn_gfgn'])` → 新浪行业-板块行情-成份详情
+- `stock_sector_fund_flow_hist([symbol='汽车服务'])` → 东方财富网-数据中心-资金流向-行业资金流-行业历史资金流
+- `stock_sector_fund_flow_rank([indicator='今日'], [sector_type='行业资金流'])` → 东方财富网-数据中心-资金流向-板块资金流-排名
+- `stock_sector_fund_flow_summary([symbol='电源设备'], [indicator='今日'])` → 东方财富网-数据中心-资金流向-行业资金流-xx行业个股资金流
+- `stock_sector_spot([indicator='新浪行业'])` → 新浪行业-板块行情
+- `stock_sgt_reference_exchange_rate_sse()` → 沪港通-港股通信息披露-参考汇率
+- `stock_sgt_reference_exchange_rate_szse()` → 深港通-港股通业务信息-参考汇率
+- `stock_sgt_settlement_exchange_rate_sse()` → 沪港通-港股通信息披露-结算汇兑
+- `stock_sgt_settlement_exchange_rate_szse()` → 深港通-港股通业务信息-结算汇率
+- `stock_sh_a_spot_em()` → 东方财富网-沪 A 股-实时行情
+- `stock_share_change_cninfo([symbol='002594'], [start_date='20091227'], [end_date='20241021'])` → 巨潮资讯-股本股东-公司股本变动
+- `stock_share_hold_change_bse([symbol='430489'])` → 北京证券交易所-信息披露-监管信息-董监高及相关人员持股变动
+- `stock_share_hold_change_sse([symbol='600000'])` → 上海证券交易所-披露-监管信息公开-公司监管-董董监高人员股份变动
+- `stock_share_hold_change_szse([symbol='全部'])` → 深圳证券交易所-信息披露-监管信息公开-董监高人员股份变动
+- `stock_shareholder_change_ths([symbol='688981'])` → 同花顺-公司大事-股东持股变动
+- `stock_sns_sseinfo([symbol='603119'])` → 上证e互动-提问与回答
+- `stock_sse_deal_daily([date='20241216'])` → 上海证券交易所-数据-股票数据-成交概况-股票成交概况-每日股票情况
+- `stock_sse_summary()` → 上海证券交易所-总貌
+- `stock_staq_net_stop()` → 东方财富网-行情中心-沪深个股-两网及退市
+- `stock_sy_em([date='20231231'])` → 东方财富网-数据中心-特色数据-商誉-个股商誉明细
+- `stock_sy_hy_em([date='20240930'])` → 东方财富网-数据中心-特色数据-商誉-行业商誉
+- `stock_sy_jz_em([date='20240630'])` → 东方财富网-数据中心-特色数据-商誉-个股商誉减值明细
+- `stock_sy_profile_em()` → 东方财富网-数据中心-特色数据-商誉-A股商誉市场概况
+- `stock_sy_yq_em([date='20240630'])` → 东方财富网-数据中心-特色数据-商誉-商誉减值预期明细
+- `stock_sz_a_spot_em()` → 东方财富网-深 A 股-实时行情
+- `stock_szse_area_summary([date='202203'])` → 深证证券交易所-总貌-地区交易排序
+- `stock_szse_sector_summary([symbol='当月'], [date='202501'])` → 深圳证券交易所-统计资料-股票行业成交数据
+- `stock_szse_summary([date='20240830'])` → 深证证券交易所-总貌-证券类别统计
+- `stock_tfp_em([date='20240426'])` → 东方财富网-数据中心-特色数据-停复牌信息
+- `stock_us_daily([symbol='FB'], [adjust=''])` → 新浪财经-美股
+- `stock_us_famous_spot_em([symbol='科技类'])` → 东方财富网-行情中心-美股市场-知名美股
+- `stock_us_hist([symbol='105.MSFT'], [period='daily'], [start_date='19700101'], [end_date='22220101'], [adjust=''])` → 东方财富网-行情-美股-每日行情
+- `stock_us_hist_min_em([symbol='105.ATER'], [start_date='1979-09-01 09:32:00'], [end_date='2222-01-01 09:32:00'])` → 东方财富网-行情首页-美股-每日分时行情
+- `stock_us_pink_spot_em()` → 东方财富网-行情中心-美股市场-粉单市场
+- `stock_us_spot()` → 新浪财经-所有美股的数据, 注意延迟 15 分钟
+- `stock_us_spot_em()` → 东方财富网-美股-实时行情
+- `stock_us_valuation_baidu([symbol='NVDA'], [indicator='总市值'], [period='近一年'])` → 百度股市通-美股-财务报表-估值数据
+- `stock_value_em([symbol='300766'])` → 东方财富网-数据中心-估值分析-每日互动-每日互动-估值分析
+- `stock_xgsglb_em([symbol='全部股票'])` → 新股申购与中签查询
+- `stock_xgsr_ths()` → 同花顺-数据中心-新股数据-新股上市首日
+- `stock_xjll_em([date='20240331'])` → 东方财富-数据中心-年报季报-业绩快报-现金流量表
+- `stock_yjbb_em([date='20200331'])` → 东方财富-数据中心-年报季报-业绩快报-业绩报表
+- `stock_yjkb_em([date='20211231'])` → 东方财富-数据中心-年报季报-业绩快报
+- `stock_yjyg_em([date='20200331'])` → 东方财富-数据中心-年报季报-业绩预告
+- `stock_yysj_em([symbol='沪深A股'], [date='20200331'])` → 东方财富-数据中心-年报季报-预约披露时间
+- `stock_yzxdr_em([date='20240930'])` → 东方财富网-数据中心-特色数据-一致行动人
+- `stock_zcfz_bj_em([date='20240331'])` → 东方财富-数据中心-年报季报-业绩快报-资产负债表
+- `stock_zcfz_em([date='20240331'])` → 东方财富-数据中心-年报季报-业绩快报-资产负债表
+- `stock_zdhtmx_em([start_date='20200819'], [end_date='20230819'])` → 东方财富网-数据中心-重大合同-重大合同明细
+- `stock_zh_a_cdr_daily([symbol='sh689009'], [start_date='19900101'], [end_date='22201116'])` → 新浪财经-A股-CDR个股的历史行情数据, 大量抓取容易封 IP
+- `stock_zh_a_daily([symbol='sh603843'], [start_date='19900101'], [end_date='21000118'], [adjust=''])` → 新浪财经-A 股-个股的历史行情数据, 大量抓取容易封 IP
+- `stock_zh_a_disclosure_relation_cninfo([symbol='000001'], [market='沪深京'], [start_date='20230618'], [end_date='20231219'])` → 巨潮资讯-首页-数据-预约披露调研
+- `stock_zh_a_disclosure_report_cninfo([symbol='000001'], [market='沪深京'], [keyword=''], [category=''], [start_date='20230618']...)` → 巨潮资讯-首页-公告查询-信息披露公告
+- `stock_zh_a_gbjg_em([symbol='603392.SH'])` → 东方财富-A股数据-股本结构
+- `stock_zh_a_gdhs([symbol='20230930'])` → 东方财富网-数据中心-特色数据-股东户数
+- `stock_zh_a_gdhs_detail_em([symbol='000001'])` → 东方财富网-数据中心-特色数据-股东户数详情
+- `stock_zh_a_hist([symbol='000001'], [period='daily'], [start_date='19700101'], [end_date='20500101'], [adjust='']...)` → 东方财富网-行情首页-沪深京 A 股-每日行情
+- `stock_zh_a_hist_min_em([symbol='000001'], [start_date='1979-09-01 09:32:00'], [end_date='2222-01-01 09:32:00'], [period='5'], [adjust=''])` → 东方财富网-行情首页-沪深京 A 股-每日分时行情
+- `stock_zh_a_hist_pre_min_em([symbol='000001'], [start_time='09:00:00'], [end_time='15:50:00'])` → 东方财富网-行情首页-沪深京 A 股-每日分时行情包含盘前数据
+- `stock_zh_a_hist_tx([symbol='sz000001'], [start_date='19000101'], [end_date='20500101'], [adjust=''], [timeout])` → 腾讯证券-日频-股票历史数据
+- `stock_zh_a_minute([symbol='sh600519'], [period='1'], [adjust=''])` → 股票及股票指数历史行情数据-分钟数据
+- `stock_zh_a_new()` → 新浪财经-行情中心-沪深股市-次新股
+- `stock_zh_a_new_em()` → 东方财富网-行情中心-沪深个股-新股
+- `stock_zh_a_spot()` → 新浪财经-所有 A 股的实时行情数据; 重复运行本函数会被新浪暂时封 IP
+- `stock_zh_a_spot_em()` → 东方财富网-沪深京 A 股-实时行情
+- `stock_zh_a_st_em()` → 东方财富网-行情中心-沪深个股-风险警示板
+- `stock_zh_a_stop_em()` → 东方财富网-行情中心-沪深个股-两网及退市
+- `stock_zh_a_tick_tx_js([symbol='sz000001'])` → 腾讯财经-历史分笔数据
+- `stock_zh_ab_comparison_em()` → 东方财富网-行情中心-沪深京个股-AB股比价-全部AB股比价
+- `stock_zh_ah_daily([symbol='02318'], [start_year='2000'], [end_year='2019'], [adjust=''])` → 腾讯财经-港股-AH-股票历史行情
+- `stock_zh_ah_name()` → 腾讯财经-港股-AH-股票名称
+- `stock_zh_ah_spot()` → 腾讯财经-港股-AH-实时行情
+- `stock_zh_ah_spot_em()` → 东方财富网-行情中心-沪深港通-AH股比价-实时行情
+- `stock_zh_b_daily([symbol='sh900901'], [start_date='19900101'], [end_date='21000118'], [adjust=''])` → 新浪财经-B 股-个股的历史行情数据, 大量抓取容易封 IP
+- `stock_zh_b_minute([symbol='sh900901'], [period='1'], [adjust=''])` → 股票及股票指数历史行情数据-分钟数据
+- `stock_zh_b_spot()` → 新浪财经-所有 B 股的实时行情数据; 重复运行本函数会被新浪暂时封 IP
+- `stock_zh_b_spot_em()` → 东方财富网- B 股-实时行情
+- `stock_zh_dupont_comparison_em([symbol='SZ000895'])` → 东方财富-行情中心-同行比较-杜邦分析比较
+- `stock_zh_growth_comparison_em([symbol='SZ000895'])` → 东方财富-行情中心-同行比较-成长性比较
+- `stock_zh_index_daily([symbol='sh000922'])` → 新浪财经-指数-历史行情数据, 大量抓取容易封 IP
+- `stock_zh_index_daily_em([symbol='csi931151'], [start_date='19900101'], [end_date='20500101'])` → 东方财富网-股票指数数据
+- `stock_zh_index_daily_tx([symbol='sz980017'])` → 腾讯证券-日频-股票或者指数历史数据
+- `stock_zh_index_hist_csindex([symbol='000928'], [start_date='20180526'], [end_date='20240604'])` → 中证指数-具体指数-历史行情数据
+- `stock_zh_index_spot_em([symbol='上证系列指数'])` → 东方财富网-行情中心-沪深京指数
+- `stock_zh_index_spot_sina()` → 新浪财经-行情中心首页-A股-分类-所有指数
+- `stock_zh_index_value_csindex([symbol='H30374'])` → 中证指数-指数估值数据
+- `stock_zh_kcb_daily([symbol='sh688399'], [adjust=''])` → 新浪财经-科创板股票的历史行情数据, 大量抓取容易封IP
+- `stock_zh_kcb_report_em([from_page=1], [to_page=100])` → 科创板报告内容
+- `stock_zh_kcb_spot()` → 新浪财经-科创板实时行情数据, 大量抓取容易封IP
+- `stock_zh_scale_comparison_em([symbol='SZ000895'])` → 东方财富-行情中心-同行比较-公司规模
+- `stock_zh_valuation_baidu([symbol='002044'], [indicator='总市值'], [period='近一年'])` → 百度股市通-A股-财务报表-估值数据
+- `stock_zh_valuation_comparison_em([symbol='SZ000895'])` → 东方财富-行情中心-同行比较-估值比较
+- `stock_zh_vote_baidu([symbol='000001'], [indicator='指数'])` → 百度股市通- A 股或指数-股评-投票
+- `stock_zt_pool_dtgc_em([date='20241011'])` → 东方财富网-行情中心-涨停板行情-跌停股池
+- `stock_zt_pool_em([date='20241008'])` → 东方财富网-行情中心-涨停板行情-涨停股池
+- `stock_zt_pool_previous_em([date='20240415'])` → 东方财富网-行情中心-涨停板行情-昨日涨停股池
+- `stock_zt_pool_strong_em([date='20241231'])` → 东方财富网-行情中心-涨停板行情-强势股池
+- `stock_zt_pool_sub_new_em([date='20241231'])` → 东方财富网-行情中心-涨停板行情-次新股池
+- `stock_zt_pool_zbgc_em([date='20241011'])` → 东方财富网-行情中心-涨停板行情-炸板股池
+- `stock_zygc_em([symbol='SH688041'])` → 东方财富网-个股-主营构成
+- `stock_zyjs_ths([symbol='000066'])` → 同花顺-主营介绍
+
+## MACRO (226 个)
+- `macro_australia_bank_rate()` → 东方财富-经济数据-澳大利亚-央行公布利率决议
+- `macro_australia_cpi_quarterly()` → 东方财富-经济数据-澳大利亚-消费者物价指数季率
+- `macro_australia_cpi_yearly()` → 东方财富-经济数据-澳大利亚-消费者物价指数年率
+- `macro_australia_ppi_quarterly()` → 东方财富-经济数据-澳大利亚-生产者物价指数季率
+- `macro_australia_retail_rate_monthly()` → 东方财富-经济数据-澳大利亚-零售销售月率
+- `macro_australia_trade()` → 东方财富-经济数据-澳大利亚-贸易帐
+- `macro_australia_unemployment_rate()` → 东方财富-经济数据-澳大利亚-失业率
+- `macro_bank_australia_interest_rate()` → 澳洲联储决议报告, 数据区间从 19800201-至今
+- `macro_bank_brazil_interest_rate()` → 巴西利率决议报告, 数据区间从 20080201-至今
+- `macro_bank_china_interest_rate()` → 中国央行决议报告, 数据区间从 19990105-至今
+- `macro_bank_english_interest_rate()` → 英国央行决议报告, 数据区间从 19700101-至今
+- `macro_bank_euro_interest_rate()` → 欧洲央行决议报告, 数据区间从 19990101-至今
+- `macro_bank_india_interest_rate()` → 印度利率决议报告, 数据区间从 20000801-至今
+- `macro_bank_japan_interest_rate()` → 日本利率决议报告, 数据区间从 20080214-至今
+- `macro_bank_newzealand_interest_rate()` → 新西兰联储决议报告, 数据区间从 19990401-至今
+- `macro_bank_russia_interest_rate()` → 俄罗斯利率决议报告, 数据区间从 20030601-至今
+- `macro_bank_switzerland_interest_rate()` → 瑞士央行利率决议报告, 数据区间从 20080313-至今
+- `macro_bank_usa_interest_rate()` → 美联储利率决议报告, 数据区间从 19820927-至今
+- `macro_canada_bank_rate()` → 东方财富-经济数据-加拿大-央行公布利率决议
+- `macro_canada_core_cpi_monthly()` → 东方财富-经济数据-加拿大-核心消费者物价指数月率
+- `macro_canada_core_cpi_yearly()` → 东方财富-经济数据-加拿大-核心消费者物价指数年率
+- `macro_canada_cpi_monthly()` → 东方财富-经济数据-加拿大-消费者物价指数月率
+- `macro_canada_cpi_yearly()` → 东方财富-经济数据-加拿大-消费者物价指数年率
+- `macro_canada_gdp_monthly()` → 东方财富-经济数据-加拿大-GDP 月率
+- `macro_canada_new_house_rate()` → 东方财富-经济数据-加拿大-新屋开工
+- `macro_canada_retail_rate_monthly()` → 东方财富-经济数据-加拿大-零售销售月率
+- `macro_canada_trade()` → 东方财富-经济数据-加拿大-贸易帐
+- `macro_canada_unemployment_rate()` → 东方财富-经济数据-加拿大-失业率
+- `macro_china_agricultural_index()` → 农副指数
+- `macro_china_agricultural_product()` → 农产品批发价格总指数
+- `macro_china_au_report()` → 上海黄金交易所报告, 数据区间从20100331-至今
+- `macro_china_bank_financing()` → 银行理财产品发行数量
+- `macro_china_bdti_index()` → 原油运输指数
+- `macro_china_bond_public()` → 中国-债券信息披露-债券发行
+- `macro_china_bsi_index()` → 超灵便型船运价指数
+- `macro_china_central_bank_balance()` → 新浪财经-中国宏观经济数据-央行货币当局资产负债
+- `macro_china_commodity_price_index()` → 大宗商品价格
+- `macro_china_construction_index()` → 建材指数
+- `macro_china_construction_price_index()` → 建材价格指数
+- `macro_china_consumer_goods_retail()` → 东方财富-经济数据-社会消费品零售总额
+- `macro_china_cpi()` → 东方财富-中国居民消费价格指数
+- `macro_china_cpi_monthly()` → 中国月度 CPI 数据, 数据区间从 19960201-至今
+- `macro_china_cpi_yearly()` → 中国年度 CPI 数据, 数据区间从 19860201-至今
+- `macro_china_cx_pmi_yearly()` → 中国年度财新 PMI 数据, 数据区间从 20120120-至今
+- `macro_china_cx_services_pmi_yearly()` → 中国财新服务业PMI报告, 数据区间从 20120405-至今
+- `macro_china_czsr()` → 东方财富-财政收入
+- `macro_china_daily_energy()` → 中国日度沿海六大电库存数据, 数据区间从20160101-至今
+- `macro_china_energy_index()` → 能源指数
+- `macro_china_enterprise_boom_index()` → https://data.eastmoney.com/cjsj/qyjqzs.html
+- `macro_china_exports_yoy()` → 中国以美元计算出口年率报告, 数据区间从 19820201-至今
+- `macro_china_fdi()` → 东方财富-经济数据一览-中国-外商直接投资数据
+- `macro_china_foreign_exchange_gold()` → 央行黄金和外汇储备
+- `macro_china_freight_index()` → 新浪财经-中国宏观经济数据-航贸运价指数
+- `macro_china_fx_gold()` → 东方财富-外汇和黄金储备
+- `macro_china_fx_reserves_yearly()` → 中国年度外汇储备数据, 数据区间从 20140115-至今
+- `macro_china_gdp()` → 东方财富-中国国内生产总值
+- `macro_china_gdp_yearly()` → 金十数据中心-中国 GDP 年率报告, 数据区间从 20110120-至今
+- `macro_china_gdzctz()` → 东方财富-中国城镇固定资产投资
+- `macro_china_gyzjz()` → 东方财富网-经济数据-工业增加值增长
+- `macro_china_hgjck()` → 东方财富-海关进出口增减情况一览表
+- `macro_china_hk_building_amount()` → 东方财富-经济数据一览-中国香港-香港楼宇买卖合约成交金额
+- `macro_china_hk_building_volume()` → 东方财富-经济数据一览-中国香港-香港楼宇买卖合约数量
+- `macro_china_hk_cpi()` → 东方财富-经济数据一览-中国香港-消费者物价指数
+- `macro_china_hk_cpi_ratio()` → 东方财富-经济数据一览-中国香港-消费者物价指数年率
+- `macro_china_hk_gbp()` → 东方财富-经济数据一览-中国香港-香港 GDP
+- `macro_china_hk_gbp_ratio()` → 东方财富-经济数据一览-中国香港-香港 GDP 同比
+- `macro_china_hk_market_info()` → 香港同业拆借报告, 数据区间从 20170320-至今
+- `macro_china_hk_ppi()` → 东方财富-经济数据一览-中国香港-香港制造业 PPI 年率
+- `macro_china_hk_rate_of_unemployment()` → 东方财富-经济数据一览-中国香港-失业率
+- `macro_china_hk_trade_diff_ratio()` → 东方财富-经济数据一览-中国香港-香港商品贸易差额年率
+- `macro_china_imports_yoy()` → 中国以美元计算进口年率报告, 数据区间从 19960201-至今
+- `macro_china_industrial_production_yoy()` → 中国规模以上工业增加值年率报告, 数据区间从19900301-至今
+- `macro_china_insurance()` → 新浪财经-中国宏观经济数据-保险业经营情况
+- `macro_china_insurance_income()` → 原保险保费收入
+- `macro_china_international_tourism_fx()` → 新浪财经-中国宏观经济数据-国际旅游外汇收入构成
+- `macro_china_lpi_index()` → 物流景气指数
+- `macro_china_lpr()` → LPR品种详细数据
+- `macro_china_m2_yearly()` → 中国年度 M2 数据, 数据区间从 19980201-至今
+- `macro_china_market_margin_sh()` → 上海融资融券报告, 数据区间从 20100331-至今
+- `macro_china_market_margin_sz()` → 深圳融资融券报告, 数据区间从20100331-至今
+- `macro_china_mobile_number()` → 手机出货量
+- `macro_china_money_supply()` → 东方财富-货币供应量
+- `macro_china_national_tax_receipts()` → 中国-全国税收收入
+- `macro_china_nbs_nation(kind, path, [period='LAST10'])` → 国家统计局全国数据通用接口
+- `macro_china_nbs_region(kind, path, indicator, [region], [period='LAST10'])` → 国家统计局地区数据通用接口
+- `macro_china_new_financial_credit()` → 中国-新增信贷数据
+- `macro_china_new_house_price([city_first='北京'], [city_second='上海'])` → 中国-新房价指数
+- `macro_china_non_man_pmi()` → 中国官方非制造业 PMI, 数据区间从 20160101-至今
+- `macro_china_passenger_load_factor()` → 新浪财经-中国宏观经济数据-民航客座率及载运率
+- `macro_china_pmi()` → 东方财富-中国采购经理人指数
+- `macro_china_pmi_yearly()` → 中国年度 PMI 数据, 数据区间从 20050201-至今
+- `macro_china_postal_telecommunicational()` → 新浪财经-中国宏观经济数据-邮电业务基本情况
+- `macro_china_ppi()` → 东方财富-中国工业品出厂价格指数
+- `macro_china_ppi_yearly()` → 中国年度 PPI 数据, 数据区间从 19950801-至今
+- `macro_china_qyspjg()` → 东方财富-经济数据一览-中国-企业商品价格指数
+- `macro_china_real_estate()` → 国房景气指数
+- `macro_china_reserve_requirement_ratio()` → 存款准备金率
+- `macro_china_retail_price_index()` → 商品零售价格指数
+- `macro_china_rmb()` → 中国人民币汇率中间价报告, 数据区间从 20170103-至今
+- `macro_china_shibor_all()` → 上海银行业同业拆借报告, 数据区间从20170317-至今
+- `macro_china_shrzgm()` → 商务数据中心-国内贸易-社会融资规模增量统计
+- `macro_china_society_electricity()` → 新浪财经-中国宏观经济数据-全社会用电分类情况表
+- `macro_china_society_traffic_volume()` → 新浪财经-中国宏观经济数据-全社会客货运输量
+- `macro_china_stock_market_cap()` → 东方财富-全国股票交易统计表
+- `macro_china_supply_of_money()` → 新浪财经-中国宏观经济数据-货币供应量
+- `macro_china_swap_rate([start_date='20231101'], [end_date='20231204'])` → FR007 利率互换曲线历史数据; 只能获取近一年的数据
+- `macro_china_trade_balance()` → 中国以美元计算贸易帐报告, 数据区间从 19810201-至今
+- `macro_china_urban_unemployment()` → 国家统计局-月度数据-城镇调查失业率
+- `macro_china_vegetable_basket()` → 菜篮子产品批发价格指数
+- `macro_china_wbck()` → 东方财富-本外币存款
+- `macro_china_whxd()` → 东方财富-外汇贷款数据
+- `macro_china_xfzxx()` → 东方财富网-经济数据一览-消费者信心指数
+- `macro_china_yw_electronic_index()` → 义乌小商品指数-电子元器件
+- `macro_cnbs()` → 国家金融与发展实验室-中国宏观杠杆率数据
+- `macro_cons_gold()` → 全球最大黄金 ETF—SPDR Gold Trust 持仓报告, 数据区间从 20041118-至今
+- `macro_cons_opec_month()` → 欧佩克报告-月度, 数据区间从 20170118-至今
+- `macro_cons_silver()` → 全球最大白银 ETF—SPDR Gold Trust 持仓报告, 数据区间从 20041118-至今
+- `macro_euro_cpi_mom()` → 欧元区 CPI 月率报告, 数据区间从 19900301-至今
+- `macro_euro_cpi_yoy()` → 欧元区CPI年率报告, 数据区间从19910201-至今
+- `macro_euro_current_account_mom()` → 欧元区经常帐报告, 数据区间从20080221-至今, 前两个值需要去掉
+- `macro_euro_employment_change_qoq()` → 欧元区季调后就业人数季率报告, 数据区间从20083017-至今
+- `macro_euro_gdp_yoy()` → 欧元区季度 GDP 年率报告, 数据区间从 20131114-至今
+- `macro_euro_industrial_production_mom()` → 欧元区工业产出月率报告, 数据区间从19910301-至今
+- `macro_euro_lme_holding()` → 伦敦金属交易所(LME)-持仓报告, 数据区间从 20151022-至今
+- `macro_euro_lme_stock()` → 伦敦金属交易所(LME)-库存报告, 数据区间从 20140702-至今
+- `macro_euro_manufacturing_pmi()` → 欧元区制造业PMI初值报告, 数据区间从20080222-至今
+- `macro_euro_ppi_mom()` → 欧元区PPI月率报告, 数据区间从19810301-至今
+- `macro_euro_retail_sales_mom()` → 欧元区零售销售月率报告, 数据区间从20000301-至今
+- `macro_euro_sentix_investor_confidence()` → 欧元区Sentix投资者信心指数报告, 数据区间从20020801-至今
+- `macro_euro_services_pmi()` → 欧元区服务业PMI终值报告, 数据区间从 20080222-至今
+- `macro_euro_trade_balance()` → 欧元区未季调贸易帐报告, 数据区间从19990201-至今
+- `macro_euro_unemployment_rate_mom()` → 欧元区失业率报告, 数据区间从19980501-至今
+- `macro_euro_zew_economic_sentiment()` → 欧元区ZEW经济景气指数报告, 数据区间从20080212-至今
+- `macro_fx_sentiment([start_date='20221011'], [end_date='20221017'])` → 金十数据-外汇-投机情绪报告
+- `macro_germany_cpi_monthly()` → 东方财富-数据中心-经济数据一览-德国-消费者物价指数月率终值
+- `macro_germany_cpi_yearly()` → 东方财富-数据中心-经济数据一览-德国-消费者物价指数年率终值
+- `macro_germany_gdp()` → 东方财富-数据中心-经济数据一览-德国-GDP
+- `macro_germany_ifo()` → 东方财富-数据中心-经济数据一览-德国-IFO商业景气指数
+- `macro_germany_retail_sale_monthly()` → 东方财富-数据中心-经济数据一览-德国-实际零售销售月率
+- `macro_germany_retail_sale_yearly()` → 东方财富-数据中心-经济数据一览-德国-实际零售销售年率
+- `macro_germany_trade_adjusted()` → 东方财富-数据中心-经济数据一览-德国-贸易帐(季调后)
+- `macro_germany_zew()` → 东方财富-数据中心-经济数据一览-德国-ZEW 经济景气指数
+- `macro_global_sox_index()` → 费城半导体指数
+- `macro_info_ws([date='20240514'])` → 华尔街见闻-日历-宏观
+- `macro_japan_bank_rate()` → 东方财富-经济数据-日本-央行公布利率决议
+- `macro_japan_core_cpi_yearly()` → 东方财富-经济数据-日本-全国核心消费者物价指数年率
+- `macro_japan_cpi_yearly()` → 东方财富-经济数据-日本-全国消费者物价指数年率
+- `macro_japan_head_indicator()` → 东方财富-经济数据-日本-领先指标终值
+- `macro_japan_unemployment_rate()` → 东方财富-经济数据-日本-失业率
+- `macro_rmb_deposit()` → 同花顺-数据中心-宏观数据-人民币存款余额
+- `macro_rmb_loan()` → 同花顺-数据中心-宏观数据-新增人民币贷款
+- `macro_shipping_bci()` → 海岬型运费指数(BCI)
+- `macro_shipping_bcti()` → 成品油运输指数（BCTI）
+- `macro_shipping_bdi()` → 波罗的海干散货指数(BDI)
+- `macro_shipping_bpi()` → 巴拿马型运费指数(BPI)
+- `macro_stock_finance()` → 同花顺-数据中心-宏观数据-股票筹资
+- `macro_swiss_cpi_yearly()` → 东方财富-经济数据-瑞士-消费者物价指数年率
+- `macro_swiss_gbd_bank_rate()` → 东方财富-经济数据-瑞士-央行公布利率决议
+- `macro_swiss_gbd_yearly()` → 东方财富-经济数据-瑞士-GDP 年率
+- `macro_swiss_gdp_quarterly()` → 东方财富-经济数据-瑞士-GDP季率
+- `macro_swiss_svme()` → 东方财富-经济数据-瑞士-SVME采购经理人指数
+- `macro_swiss_trade()` → 东方财富-经济数据-瑞士-贸易帐
+- `macro_uk_bank_rate()` → 东方财富-经济数据-英国-央行公布利率决议
+- `macro_uk_core_cpi_monthly()` → 东方财富-经济数据-英国-核心消费者物价指数月率
+- `macro_uk_core_cpi_yearly()` → 东方财富-经济数据-英国-核心消费者物价指数年率
+- `macro_uk_cpi_monthly()` → 东方财富-经济数据-英国-消费者物价指数月率
+- `macro_uk_cpi_yearly()` → 东方财富-经济数据-英国-消费者物价指数年率
+- `macro_uk_gdp_quarterly()` → 东方财富-经济数据-英国-GDP 季率初值
+- `macro_uk_gdp_yearly()` → 东方财富-经济数据-英国-GDP 年率初值
+- `macro_uk_halifax_monthly()` → 东方财富-经济数据-英国-Halifax 房价指数月率
+- `macro_uk_halifax_yearly()` → 东方财富-经济数据-英国-Halifax 房价指数年率
+- `macro_uk_retail_monthly()` → 东方财富-经济数据-英国-零售销售月率
+- `macro_uk_retail_yearly()` → 东方财富-经济数据-英国-零售销售年率
+- `macro_uk_rightmove_monthly()` → 东方财富-经济数据-英国-Rightmove 房价指数月率
+- `macro_uk_rightmove_yearly()` → 东方财富-经济数据-英国-Rightmove 房价指数年率
+- `macro_uk_trade()` → 东方财富-经济数据-英国-贸易帐
+- `macro_uk_unemployment_rate()` → 东方财富-经济数据-英国-失业率
+- `macro_usa_adp_employment()` → 美国ADP就业人数报告, 数据区间从 20010601-至今
+- `macro_usa_api_crude_stock()` → 美国 API 原油库存报告, 数据区间从 20120328-至今
+- `macro_usa_building_permits()` → 美国营建许可总数报告, 数据区间从 20080220-至今
+- `macro_usa_business_inventories()` → 美国商业库存月率报告, 数据区间从 19920301-至今
+- `macro_usa_cb_consumer_confidence()` → 金十数据中心-经济指标-美国-领先指标-美国谘商会消费者信心指数报告, 数据区间从 19700101-至今
+- `macro_usa_cftc_c_holding()` → 美国商品期货交易委员会CFTC商品类非商业持仓报告, 数据区间从 19830107-至今
+- `macro_usa_cftc_merchant_currency_holding()` → 美国商品期货交易委员会CFTC外汇类商业持仓报告, 数据区间从 19860115-至今
+- `macro_usa_cftc_merchant_goods_holding()` → 美国商品期货交易委员会CFTC商品类商业持仓报告, 数据区间从 19860115-至今
+- `macro_usa_cftc_nc_holding()` → 美国商品期货交易委员会CFTC外汇类非商业持仓报告, 数据区间从 19830107-至今
+- `macro_usa_cme_merchant_goods_holding()` → CME-贵金属, 数据区间从 20180405-至今
+- `macro_usa_core_cpi_monthly()` → 美国核心 CPI 月率报告, 数据区间从 19700101-至今
+- `macro_usa_core_pce_price()` → 美国核心PCE物价指数年率报告, 数据区间从 19700101-至今
+- `macro_usa_core_ppi()` → 美国核心生产者物价指数(PPI)报告, 数据区间从20080318-至今
+- `macro_usa_cpi_monthly()` → 美国 CPI 月率报告, 数据区间从 19700101-至今
+- `macro_usa_cpi_yoy()` → 东方财富-经济数据一览-美国-CPI年率, 数据区间从 2008-至今
+- `macro_usa_crude_inner()` → 美国原油产量报告, 数据区间从 19830107-至今
+- `macro_usa_current_account()` → 美国经常帐报告, 数据区间从 20080317-至今
+- `macro_usa_durable_goods_orders()` → 美国耐用品订单月率报告, 数据区间从 20080227-至今
+- `macro_usa_eia_crude_rate()` → 美国 EIA 原油库存报告, 数据区间从 19950801-至今
+- `macro_usa_exist_home_sales()` → 美国成屋销售总数年化报告, 数据区间从 19700101-至今
+- `macro_usa_export_price()` → 美国出口价格指数报告, 数据区间从19890201-至今
+- `macro_usa_factory_orders()` → 美国工厂订单月率报告, 数据区间从 19920401-至今
+- `macro_usa_gdp_monthly()` → 金十数据-美国国内生产总值(GDP)报告, 数据区间从 20080228-至今
+- `macro_usa_house_price_index()` → 美国FHFA房价指数月率报告, 数据区间从 19910301-至今
+- `macro_usa_house_starts()` → 美国新屋开工总数年化报告, 数据区间从 19700101-至今
+- `macro_usa_import_price()` → 美国进口物价指数报告, 数据区间从19890201-至今
+- `macro_usa_industrial_production()` → 美国工业产出月率报告, 数据区间从 19700101-至今
+- `macro_usa_initial_jobless()` → 美国初请失业金人数报告, 数据区间从 19700101-至今
+- `macro_usa_ism_non_pmi()` → 美国ISM非制造业PMI报告, 数据区间从 19970801-至今
+- `macro_usa_ism_pmi()` → 美国 ISM 制造业 PMI 报告, 数据区间从 19700101-至今
+- `macro_usa_job_cuts()` → 美国挑战者企业裁员人数报告, 数据区间从 19940201-至今
+- `macro_usa_lmci()` → 美联储劳动力市场状况指数报告, 数据区间从 20141006-至今
+- `macro_usa_michigan_consumer_sentiment()` → 美国密歇根大学消费者信心指数初值报告, 数据区间从 19700301-至今
+- `macro_usa_nahb_house_market_index()` → 美国NAHB房产市场指数报告, 数据区间从 19850201-至今
+- `macro_usa_new_home_sales()` → 美国新屋销售总数年化报告, 数据区间从 19700101-至今
+- `macro_usa_nfib_small_business()` → 美国NFIB小型企业信心指数报告, 数据区间从 19750201-至今
+- `macro_usa_non_farm()` → 美国非农就业人数报告, 数据区间从19700102-至今
+- `macro_usa_pending_home_sales()` → 美国成屋签约销售指数月率报告, 数据区间从 20010301-至今
+- `macro_usa_personal_spending()` → 美国个人支出月率报告, 数据区间从19700101-至今
+- `macro_usa_phs()` → 东方财富-经济数据一览-美国-未决房屋销售月率
+- `macro_usa_pmi()` → 美国 Markit 制造业 PMI 初值报告, 数据区间从 20120601-至今
+- `macro_usa_ppi()` → 美国生产者物价指数(PPI)报告, 数据区间从 20080226-至今
+- `macro_usa_real_consumer_spending()` → 美国实际个人消费支出季率初值报告, 数据区间从 20131107-至今
+- `macro_usa_retail_sales()` → 美国零售销售月率报告, 数据区间从 19920301-至今
+- `macro_usa_rig_count()` → 贝克休斯钻井报告, 数据区间从 20080317-至今
+- `macro_usa_services_pmi()` → 美国Markit服务业PMI初值报告, 数据区间从 20120701-至今
+- `macro_usa_spcs20()` → 美国S&P/CS20座大城市房价指数年率报告, 数据区间从 20010201-至今
+- `macro_usa_trade_balance()` → 美国贸易帐报告, 数据区间从 19700101-至今
+- `macro_usa_unemployment_rate()` → 美国失业率报告, 数据区间从 19700101-至今
+
+## INDEX (79 个)
+- `index_ai_cx()` → 财新数据-指数报告-AI策略指数
+- `index_all_cni()` → 国证指数-最近交易日的所有指数
+- `index_analysis_daily_sw([symbol='市场表征'], [start_date='20221103'], [end_date='20221103'])` → 申万宏源研究-指数分析
+- `index_analysis_monthly_sw([symbol='市场表征'], [date='20221031'])` → 申万宏源研究-指数分析-月报告
+- `index_analysis_week_month_sw([symbol='month'])` → 申万宏源研究-周/月报表-日期序列
+- `index_analysis_weekly_sw([symbol='市场表征'], [date='20221104'])` → 申万宏源研究-指数分析-周报告
+- `index_awpr_cx()` → 财新数据-指数报告-新经济入职工资溢价水平
+- `index_bei_cx()` → 财新数据-指数报告-基石经济指数
+- `index_bi_cx()` → 财新数据-指数报告-基础指数
+- `index_bloomberg_billionaires()` → Bloomberg Billionaires Index
+- `index_bloomberg_billionaires_hist([year='2021'])` → Bloomberg Billionaires Index
+- `index_cci_cx()` → 财新数据-指数报告-大宗商品指数
+- `index_ci_cx()` → 财新数据-指数报告-资本投入指数
+- `index_code_id_map_em()` → 东方财富-股票和市场代码
+- `index_component_sw([symbol='801001'])` → 申万宏源研究-指数发布-指数详情-成分股
+- `index_csindex_all()` → 中证指数网站-指数列表
+- `index_dei_cx()` → 财新数据-指数报告-数字经济指数
+- `index_detail_cni([symbol='399001'])` → 国证指数-样本详情-指定日期的样本成份
+- `index_detail_hist_adjust_cni([symbol='399005'])` → 国证指数-样本详情-历史调样
+- `index_detail_hist_cni([symbol='399001'])` → 国证指数-样本详情-历史样本
+- `index_eri([symbol='月度'])` → 浙江省排污权交易指数
+- `index_fi_cx()` → 财新数据-指数报告-融合指数
+- `index_global_hist_em([symbol='美元指数'])` → 东方财富网-行情中心-全球指数-历史行情数据
+- `index_global_hist_sina([symbol='OMX'])` → 新浪财经-行情中心-环球市场-历史行情
+- `index_global_name_table()` → 新浪财经-行情中心-环球市场-名称代码映射表
+- `index_global_spot_em()` → 东方财富网-行情中心-全球指数-实时行情数据
+- `index_hist_cni([symbol='399001'], [start_date='20230114'], [end_date='20240114'])` → 指数历史行情数据
+- `index_hist_fund_sw([symbol='807200'], [period='day'])` → 申万宏源研究-申万指数-指数发布-基金指数-历史行情
+- `index_hist_sw([symbol='801030'], [period='day'])` → 申万宏源研究-指数发布-指数详情-指数历史数据
+- `index_hog_spot_price()` → 行情宝-生猪市场价格指数
+- `index_ii_cx()` → 财新数据-指数报告-产业指数
+- `index_inner_quote_sugar_msweet()` → 沐甜科技数据中心-配额内进口糖估算指数
+- `index_kq_fashion([symbol='时尚创意指数'])` → 柯桥时尚指数
+- `index_kq_fz([symbol='价格指数'])` → 中国柯桥纺织指数
+- `index_li_cx()` → 财新数据-指数报告-劳动力投入指数
+- `index_min_sw([symbol='801001'])` → 申万宏源研究-指数发布-指数详情-指数分时数据
+- `index_neaw_cx()` → 财新数据-指数报告-新经济行业入职平均工资水平
+- `index_neei_cx()` → 财新数据-指数报告-新动能指数
+- `index_nei_cx()` → 财新数据-指数报告-中国新经济指数
+- `index_news_sentiment_scope()` → 数库-A股新闻情绪指数
+- `index_option_1000index_min_qvix()` → 中证1000股指 期权波动率指数 QVIX-分时
+- `index_option_1000index_qvix()` → 中证1000股指 期权波动率指数 QVIX
+- `index_option_100etf_min_qvix()` → 深证100ETF 期权波动率指数 QVIX-分时
+- `index_option_100etf_qvix()` → 深证100ETF 期权波动率指数 QVIX
+- `index_option_300etf_min_qvix()` → 300 ETF 期权波动率指数 QVIX-分时
+- `index_option_300etf_qvix()` → 300 ETF 期权波动率指数 QVIX
+- `index_option_300index_min_qvix()` → 中证300股指 期权波动率指数 QVIX-分时
+- `index_option_300index_qvix()` → 中证300股指 期权波动率指数 QVIX
+- `index_option_500etf_min_qvix()` → 500 ETF 期权波动率指数 QVIX-分时
+- `index_option_500etf_qvix()` → 500 ETF 期权波动率指数 QVIX
+- `index_option_50etf_min_qvix()` → 50 ETF 期权波动率指数 QVIX
+- `index_option_50etf_qvix()` → 50ETF 期权波动率指数 QVIX
+- `index_option_50index_min_qvix()` → 上证50股指 期权波动率指数 QVIX-分时
+- `index_option_50index_qvix()` → 上证50股指 期权波动率指数 QVIX
+- `index_option_cyb_min_qvix()` → 创业板 期权波动率指数 QVIX-分时
+- `index_option_cyb_qvix()` → 创业板 期权波动率指数 QVIX
+- `index_option_kcb_min_qvix()` → 科创板 期权波动率指数 QVIX-分时
+- `index_option_kcb_qvix()` → 科创板 期权波动率指数 QVIX
+- `index_outer_quote_sugar_msweet()` → 沐甜科技数据中心-配额外进口糖估算指数
+- `index_pmi_com_cx()` → 财新数据-指数报告-财新中国 PMI-综合 PMI
+- `index_pmi_man_cx()` → 财新数据-指数报告-财新中国 PMI-制造业 PMI
+- `index_pmi_ser_cx()` → 财新数据-指数报告-财新中国 PMI-服务业 PMI
+- `index_price_cflp([symbol='周指数'])` → 中国公路物流运价指数
+- `index_qli_cx()` → 财新数据-指数报告-高质量因子
+- `index_realtime_fund_sw([symbol='基础一级'])` → 申万宏源研究-申万指数-指数发布-基金指数-实时行情
+- `index_realtime_sw([symbol='二级行业'])` → 申万宏源研究-指数系列
+- `index_si_cx()` → 财新数据-指数报告-溢出指数
+- `index_stock_cons([symbol='399639'])` → 最新股票指数的成份股目录
+- `index_stock_cons_csindex([symbol='000300'])` → 中证指数网站-成份股目录
+- `index_stock_cons_sina([symbol='000300'])` → 新浪新版股票指数成份页面, 目前该接口可获取指数数量较少
+- `index_stock_cons_weight_csindex([symbol='000300'])` → 中证指数网站-样本权重
+- `index_stock_info()` → 聚宽-指数数据-指数列表
+- `index_sugar_msweet()` → 沐甜科技数据中心-中国食糖指数
+- `index_ti_cx()` → 财新数据-指数报告-科技投入指数
+- `index_us_stock_sina([symbol='.INX'])` → 新浪财经-美股指数行情
+- `index_volume_cflp([symbol='月指数'])` → 中国公路物流运量指数
+- `index_yw([symbol='月景气指数'])` → 义乌小商品指数
+- `index_zh_a_hist([symbol='000859'], [period='daily'], [start_date='19700101'], [end_date='22220101'])` → 东方财富网-中国股票指数-行情数据
+- `index_zh_a_hist_min_em([symbol='399006'], [period='1'], [start_date='1979-09-01 09:32:00'], [end_date='2222-01-01 09:32:00'])` → 东方财富网-指数数据-每日分时行情
+
+## FUND (72 个)
+- `fund_announcement_dividend_em([symbol='000001'])` → 东方财富网站-天天基金网-基金档案-基金公告-分红配送
+- `fund_announcement_personnel_em([symbol='000001'])` → 东方财富网站-天天基金网-基金档案-基金公告-人事调整
+- `fund_announcement_report_em([symbol='000001'])` → 东方财富网站-天天基金网-基金档案-基金公告-定期报告
+- `fund_aum_em()` → 东方财富-基金-基金公司排名列表
+- `fund_aum_hist_em([year='2023'])` → 东方财富-基金-基金公司历年管理规模排行列表
+- `fund_aum_trend_em()` → 东方财富-基金-基金市场管理规模走势图
+- `fund_balance_position_lg()` → 乐咕乐股-基金仓位-平衡混合型基金仓位
+- `fund_cf_em([year='2025'], [typ=''], [rank='FSRQ'], [sort='desc'], [page=-1])` → 天天基金网-基金数据-分红送配-基金拆分
+- `fund_etf_category_sina([symbol='LOF基金'])` → 新浪财经-基金列表
+- `fund_etf_category_ths([symbol='ETF'], [date=''])` → 同花顺理财-基金数据-每日净值-实时行情
+- `fund_etf_dividend_sina([symbol='sh510050'])` → 新浪财经-基金-ETF 基金-累计分红
+- `fund_etf_fund_daily_em()` → 东方财富网-天天基金网-基金数据-场内交易基金
+- `fund_etf_fund_info_em([fund='511280'], [start_date='20000101'], [end_date='20500101'])` → 东方财富网站-天天基金网-基金数据-场内交易基金-历史净值明细
+- `fund_etf_hist_em([symbol='159707'], [period='daily'], [start_date='19700101'], [end_date='20500101'], [adjust=''])` → 东方财富-ETF行情
+- `fund_etf_hist_min_em([symbol='159707'], [start_date='1979-09-01 09:32:00'], [end_date='2222-01-01 09:32:00'], [period='5'], [adjust=''])` → 东方财富-ETF 行情
+- `fund_etf_hist_sina([symbol='sh510050'])` → 新浪财经-基金-ETF 基金-日行情数据
+- `fund_etf_scale_sse([date='20250115'])` → 上海证券交易所-产品-基金产品-ETF产品-ETF产品列表-基金规模
+- `fund_etf_scale_szse()` → 深圳证券交易所-基金产品-基金列表-ETF基金份额
+- `fund_etf_spot_em()` → 东方财富-ETF 实时行情
+- `fund_etf_spot_ths([date=''])` → 同花顺理财-基金数据-每日净值-ETF-实时行情
+- `fund_exchange_rank_em()` → 东方财富网-数据中心-场内交易基金排行
+- `fund_fee_em([symbol='015641'], [indicator='认购费率'])` → 天天基金-基金档案-购买信息
+- `fund_fh_em([year='2025'], [typ=''], [rank='BZDM'], [sort='asc'], [page=-1])` → 天天基金网-基金数据-分红送配-基金分红
+- `fund_fh_rank_em()` → 天天基金网-基金数据-分红送配-基金分红排行
+- `fund_financial_fund_daily_em()` → 东方财富网站-天天基金网-基金数据-理财型基金收益
+- `fund_financial_fund_info_em([symbol='000134'])` → 东方财富网站-天天基金网-基金数据-理财型基金收益-历史净值明细
+- `fund_graded_fund_daily_em()` → 东方财富网站-天天基金网-基金数据-分级基金净值
+- `fund_graded_fund_info_em([symbol='150232'])` → 东方财富网站-天天基金网-基金数据-分级基金净值-历史净值明细
+- `fund_hk_fund_hist_em([code='1002200683'], [symbol='历史净值明细'])` → 东方财富网-天天基金网-基金数据-香港基金-历史净值明细(分红送配详情)
+- `fund_hk_rank_em()` → 东方财富网-数据中心-香港基金排行
+- `fund_hold_structure_em()` → 天天基金网-基金数据-规模份额-持有人结构
+- `fund_individual_achievement_xq([symbol='000001'], [timeout])` → 雪球基金-基金业绩
+- `fund_individual_analysis_xq([symbol='000001'], [timeout])` → 雪球基金-基金数据分析
+- `fund_individual_basic_info_xq([symbol='000001'], [timeout])` → 雪球基金-基金详情
+- `fund_individual_detail_hold_xq([symbol='002804'], [date='20231231'], [timeout])` → 雪球基金-持仓
+- `fund_individual_detail_info_xq([symbol='000001'], [timeout])` → 雪球基金-交易规则
+- `fund_individual_profit_probability_xq([symbol='000001'], [timeout])` → 雪球基金-盈利概率-历史任意时点买入，持有满 X 年，盈利概率 Y%
+- `fund_info_index_em([symbol='沪深指数'], [indicator='被动指数型'])` → 东方财富网站-天天基金网-基金数据-基金信息-指数型
+- `fund_lcx_rank_em()` → 东方财富网-数据中心-理财基金排行
+- `fund_linghuo_position_lg()` → 乐咕乐股-基金仓位-灵活配置型基金仓位
+- `fund_lof_hist_em([symbol='166009'], [period='daily'], [start_date='19700101'], [end_date='20500101'], [adjust=''])` → 东方财富-LOF 行情
+- `fund_lof_hist_min_em([symbol='166009'], [start_date='1979-09-01 09:32:00'], [end_date='2222-01-01 09:32:00'], [period='5'], [adjust=''])` → 东方财富-LOF 分时行情
+- `fund_lof_spot_em()` → 东方财富-LOF 实时行情
+- `fund_manager_em()` → 天天基金网-基金数据-基金经理大全
+- `fund_money_fund_daily_em()` → 东方财富网-天天基金网-基金数据-货币型基金收益
+- `fund_money_fund_info_em([symbol='000009'])` → 东方财富网-天天基金网-基金数据-货币型基金收益-历史净值数据
+- `fund_money_rank_em()` → 东方财富网-数据中心-货币型基金排行
+- `fund_name_em()` → 东方财富网站-天天基金网-基金数据-所有基金的名称和类型
+- `fund_new_found_em()` → 基金数据-新发基金-新成立基金
+- `fund_new_found_ths([symbol='全部'])` → 同花顺-基金数据-新发基金
+- `fund_open_fund_daily_em()` → 东方财富网-天天基金网-基金数据-开放式基金净值
+- `fund_open_fund_info_em([symbol='710001'], [indicator='单位净值走势'], [period='成立来'])` → 东方财富网-天天基金网-基金数据-开放式基金净值
+- `fund_open_fund_rank_em([symbol='全部'])` → 东方财富网-数据中心-开放基金排行
+- `fund_overview_em([symbol='015641'])` → 天天基金-基金档案-基本概况
+- `fund_portfolio_bond_hold_em([symbol='000001'], [date='2023'])` → 天天基金网-基金档案-投资组合-债券持仓
+- `fund_portfolio_change_em([symbol='003567'], [indicator='累计买入'], [date='2023'])` → 天天基金网-基金档案-投资组合-重大变动
+- `fund_portfolio_hold_em([symbol='000001'], [date='2024'])` → 天天基金网-基金档案-投资组合-基金持仓
+- `fund_portfolio_industry_allocation_em([symbol='000001'], [date='2023'])` → 天天基金网-基金档案-投资组合-行业配置
+- `fund_purchase_em()` → 东方财富网站-天天基金网-基金数据-基金申购状态
+- `fund_rating_all()` → 天天基金网-基金评级-基金评级总汇
+- `fund_rating_ja([date='20230331'])` → 天天基金网-基金评级-济安金信评级
+- `fund_rating_sh([date='20230630'])` → 天天基金网-基金评级-上海证券评级
+- `fund_rating_zs([date='20230331'])` → 天天基金网-基金评级-招商证券评级
+- `fund_report_asset_allocation_cninfo()` → 巨潮资讯-数据中心-专题统计-基金报表-基金资产配置
+- `fund_report_industry_allocation_cninfo([date='20210630'])` → 巨潮资讯-数据中心-专题统计-基金报表-基金行业配置
+- `fund_report_stock_cninfo([date='20210630'])` → 巨潮资讯-数据中心-专题统计-基金报表-基金重仓股
+- `fund_scale_change_em()` → 天天基金网-基金数据-规模份额-规模变动
+- `fund_scale_close_sina()` → 新浪财经-基金数据中心-基金规模-封闭式基金
+- `fund_scale_open_sina([symbol='股票型基金'])` → 新浪财经-基金数据中心-基金规模-开放式基金
+- `fund_scale_structured_sina()` → 新浪财经-基金数据中心-基金规模-分级子基金
+- `fund_stock_position_lg()` → 乐咕乐股-基金仓位-股票型基金仓位
+- `fund_value_estimation_em([symbol='全部'])` → 东方财富网-数据中心-净值估算
+
+## FUTURES (65 个)
+- `futures_comex_inventory([symbol='黄金'])` → 东方财富网-数据中心-期货期权-COMEX库存数据
+- `futures_comm_info([symbol='所有'])` → 九期网-期货手续费
+- `futures_comm_js([date='20260213'])` → 金十财经-期货手续费
+- `futures_contract_detail([symbol='AP2101'])` → 查询期货合约详情
+- `futures_contract_detail_em([symbol='v2602F'])` → 查询期货合约详情
+- `futures_contract_info_cffex([date='20240228'])` → 中国金融期货交易所-数据-交易参数
+- `futures_contract_info_czce([date='20240228'])` → 郑州商品交易所-交易数据-参考数据
+- `futures_contract_info_dce()` → 大连商品交易所-数据中心-业务数据-交易参数-合约信息
+- `futures_contract_info_gfex()` → 广州期货交易所-业务/服务-合约信息
+- `futures_contract_info_ine([date='20241129'])` → 上海国际能源交易中心-业务指南-交易参数汇总(期货)
+- `futures_contract_info_shfe([date='20240513'])` → 上海期货交易所-交易所服务-业务数据-交易参数汇总查询
+- `futures_dce_position_rank([date='20160919'], [vars_list=['IF', 'IC', 'IM', 'IH', 'T', 'TF', 'TS', 'TL', 'C', 'CS', 'A', 'B', 'M', 'Y', 'P', 'FB', 'BB', 'JD', 'L', 'V', 'PP', 'J', 'JM', 'I', 'EG', 'RR', 'EB', 'PG', 'LH', 'LG', 'BZ', 'WH', 'PM', 'CF', 'SR', 'TA', 'OI', 'RI', 'MA', 'ME', 'FG', 'RS', 'RM', 'ZC', 'JR', 'LR', 'SF', 'SM', 'WT', 'TC', 'GN', 'RO', 'ER', 'SRX', 'SRY', 'WSX', 'WSY', 'CY', 'AP', 'UR', 'CJ', 'SA', 'PK', 'PF', 'PX', 'SH', 'PR', 'PL', 'CU', 'AL', 'ZN', 'PB', 'NI', 'SN', 'AU', 'AG', 'RB', 'WR', 'HC', 'FU', 'BU', 'RU', 'SC', 'NR', 'SP', 'SS', 'LU', 'BC', 'AO', 'BR', 'EC', 'AD', 'OP', 'SI', 'LC', 'PS']])` → 大连商品交易所-每日持仓排名-具体合约
+- `futures_dce_position_rank_other([date='20160104'])` → 大连商品交易所-每日持仓排名-具体合约-补充
+- `futures_delivery_czce([date='20210112'])` → 郑州商品交易所-月度交割查询
+- `futures_delivery_dce([date='202312'])` → 大连商品交易所-交割统计
+- `futures_delivery_match_czce([date='20210106'])` → 郑州商品交易所-交割配对
+- `futures_delivery_match_dce([symbol='a'])` → 大连商品交易所-交割配对表
+- `futures_delivery_shfe([date='202312'])` → 上海期货交易所-交割情况表
+- `futures_display_main_sina()` → 新浪主力连续合约品种一览表
+- `futures_fees_info()` → openctp 期货交易费用参照表
+- `futures_foreign_commodity_realtime(symbol)` → 新浪-外盘期货-行情数据
+- `futures_foreign_commodity_subscribe_exchange_symbol()` → 需要订阅的行情的代码
+- `futures_foreign_detail([symbol='ZSD'])` → foreign futures contract detail data
+- `futures_foreign_hist([symbol='ZSD'])` → 外盘期货-历史行情数据-日频率
+- `futures_gfex_position_rank([date='20231113'], [vars_list])` → 广州期货交易所-日成交持仓排名
+- `futures_gfex_warehouse_receipt([date='20240122'])` → 广州期货交易所-行情数据-仓单日报
+- `futures_global_hist_em([symbol='HG00Y'])` → 东方财富网-行情中心-期货市场-国际期货-历史行情数据
+- `futures_global_spot_em()` → 东方财富网-行情中心-期货市场-国际期货
+- `futures_hist_em([symbol='热卷主连'], [period='daily'], [start_date='19900101'], [end_date='20500101'])` → 东方财富网-期货行情-行情数据
+- `futures_hist_table_em()` → 东方财富网-期货行情-交易所品种对照表
+- `futures_hog_core([symbol='外三元'])` → 玄田数据-核心数据
+- `futures_hog_cost([symbol='玉米'])` → 玄田数据-成本维度
+- `futures_hog_supply([symbol='猪肉批发价'])` → 玄田数据-供应维度
+- `futures_hold_pos_sina([symbol='成交量'], [contract='OI2501'], [date='20240223'])` → 新浪财经-期货-成交持仓
+- `futures_hq_subscribe_exchange_symbol()` → 将品种字典转化为 pandas.DataFrame
+- `futures_index_ccidx([symbol='中证商品期货指数'])` → 中证商品指数-商品指数-日频率
+- `futures_inventory_99([symbol='豆一'])` → 99 期货网-大宗商品库存数据
+- `futures_inventory_em([symbol='a'])` → 东方财富网-数据中心-期货库存数据
+- `futures_main_sina([symbol='V0'], [start_date='19900101'], [end_date='22220101'])` → 新浪财经-期货-主力连续日数据
+- `futures_news_shmet([symbol='全部'])` → 上海金属网-快讯
+- `futures_rule([date='20231205'])` → 国泰君安期货-交易日历数据表
+- `futures_settle([date='20260119'], [market='CFFEX'])` → 期货交易所结算参数
+- `futures_settle_cffex([date='20260119'])` → 中国金融期货交易所-结算参数
+- `futures_settle_czce([date='20260119'])` → 郑州商品交易所-结算参数
+- `futures_settle_gfex([date='20260119'])` → 广州期货交易所-结算参数
+- `futures_settle_ine([date='20260119'])` → 上海国际能源交易中心-结算参数
+- `futures_settle_shfe([date='20260119'])` → 上海期货交易所-结算参数
+- `futures_settlement_price_sgx([date='20231107'])` → 新加坡交易所-衍生品-历史数据-历史结算价格
+- `futures_shfe_warehouse_receipt([date='20200702'])` → 上海期货交易所指定交割仓库期货仓单日报
+- `futures_spot_price([date='20240430'], [vars_list=['IF', 'IC', 'IM', 'IH', 'T', 'TF', 'TS', 'TL', 'C', 'CS', 'A', 'B', 'M', 'Y', 'P', 'FB', 'BB', 'JD', 'L', 'V', 'PP', 'J', 'JM', 'I', 'EG', 'RR', 'EB', 'PG', 'LH', 'LG', 'BZ', 'WH', 'PM', 'CF', 'SR', 'TA', 'OI', 'RI', 'MA', 'ME', 'FG', 'RS', 'RM', 'ZC', 'JR', 'LR', 'SF', 'SM', 'WT', 'TC', 'GN', 'RO', 'ER', 'SRX', 'SRY', 'WSX', 'WSY', 'CY', 'AP', 'UR', 'CJ', 'SA', 'PK', 'PF', 'PX', 'SH', 'PR', 'PL', 'CU', 'AL', 'ZN', 'PB', 'NI', 'SN', 'AU', 'AG', 'RB', 'WR', 'HC', 'FU', 'BU', 'RU', 'SC', 'NR', 'SP', 'SS', 'LU', 'BC', 'AO', 'BR', 'EC', 'AD', 'OP', 'SI', 'LC', 'PS']])` → 指定交易日大宗商品现货价格及相应基差
+- `futures_spot_price_daily([start_day='20210201'], [end_day='20210208'], [vars_list=['IF', 'IC', 'IM', 'IH', 'T', 'TF', 'TS', 'TL', 'C', 'CS', 'A', 'B', 'M', 'Y', 'P', 'FB', 'BB', 'JD', 'L', 'V', 'PP', 'J', 'JM', 'I', 'EG', 'RR', 'EB', 'PG', 'LH', 'LG', 'BZ', 'WH', 'PM', 'CF', 'SR', 'TA', 'OI', 'RI', 'MA', 'ME', 'FG', 'RS', 'RM', 'ZC', 'JR', 'LR', 'SF', 'SM', 'WT', 'TC', 'GN', 'RO', 'ER', 'SRX', 'SRY', 'WSX', 'WSY', 'CY', 'AP', 'UR', 'CJ', 'SA', 'PK', 'PF', 'PX', 'SH', 'PR', 'PL', 'CU', 'AL', 'ZN', 'PB', 'NI', 'SN', 'AU', 'AG', 'RB', 'WR', 'HC', 'FU', 'BU', 'RU', 'SC', 'NR', 'SP', 'SS', 'LU', 'BC', 'AO', 'BR', 'EC', 'AD', 'OP', 'SI', 'LC', 'PS']])` → 指定时间段内大宗商品现货价格及相应基差
+- `futures_spot_price_previous([date='20240430'])` → 具体交易日大宗商品现货价格及相应基差
+- `futures_spot_stock([symbol='能源'])` → 东方财富网-数据中心-现货与股票
+- `futures_spot_sys([symbol='铜'], [indicator='市场价格'])` → 生意社-商品与期货-现期图
+- `futures_stock_shfe_js([date='20240419'])` → 金十财经-上海期货交易所指定交割仓库库存周报
+- `futures_symbol_mark()` → 期货的品种和代码映射
+- `futures_to_spot_czce([date='20231228'])` → 郑州商品交易所-期转现统计
+- `futures_to_spot_dce([date='202312'])` → 大连商品交易所-期转现
+- `futures_to_spot_shfe([date='202312'])` → 上海期货交易所-期转现
+- `futures_warehouse_receipt_czce([date='20251103'])` → 郑州商品交易所-交易数据-仓单日报
+- `futures_warehouse_receipt_dce([date='20251027'])` → 大连商品交易所-行情数据-统计数据-日统计-仓单日报
+- `futures_zh_daily_sina([symbol='RB0'])` → 中国各品种期货日频率数据
+- `futures_zh_minute_sina([symbol='IF2008'], [period='1'])` → 中国各品种期货分钟频率数据
+- `futures_zh_realtime([symbol='PTA'])` → 期货品种当前时刻所有可交易的合约实时数据
+- `futures_zh_spot([symbol='V2309'], [market='CF'], [adjust='0'])` → 期货的实时行情数据
+
+## OPTION (46 个)
+- `option_cffex_hs300_daily_sina([symbol='io2202P4350'])` → 新浪财经-中金所-沪深300指数-指定合约-日频行情
+- `option_cffex_hs300_list_sina()` → 新浪财经-中金所-沪深 300 指数-所有合约, 返回的第一个合约为主力合约
+- `option_cffex_hs300_spot_sina([symbol='io2204'])` → 中金所-沪深 300 指数-指定合约-实时行情
+- `option_cffex_sz50_daily_sina([symbol='ho2303P2350'])` → 新浪财经-中金所-上证 50 指数-指定合约-日频行情
+- `option_cffex_sz50_list_sina()` → 新浪财经-中金所-上证 50 指数-所有合约, 返回的第一个合约为主力合约
+- `option_cffex_sz50_spot_sina([symbol='ho2303'])` → 中金所-上证 50 指数-指定合约-实时行情
+- `option_cffex_zz1000_daily_sina([symbol='mo2208P6200'])` → 新浪财经-中金所-中证 1000 指数-指定合约-日频行情
+- `option_cffex_zz1000_list_sina()` → 新浪财经-中金所-中证 1000 指数-所有合约, 返回的第一个合约为主力合约
+- `option_cffex_zz1000_spot_sina([symbol='mo2208'])` → 中金所-中证 1000 指数-指定合约-实时行情
+- `option_comm_info([symbol='工业硅期权'])` → 九期网-商品期权手续费
+- `option_comm_symbol()` → 
+- `option_commodity_contract_sina([symbol='玉米期权'])` → 当前可以查询的期权品种的合约日期
+- `option_commodity_contract_table_sina([symbol='黄金期权'], [contract='au2204'])` → 当前所有期权合约, 包括看涨期权合约和看跌期权合约
+- `option_commodity_hist_sina([symbol='au2012C392'])` → 合约历史行情-日频
+- `option_contract_info_ctp()` → openctp-合约信息接口-期权合约
+- `option_current_day_sse()` → 上海证券交易所-产品-股票期权-信息披露-当日合约
+- `option_current_day_szse()` → 深圳证券交易所-期权子网-行情数据-当日合约
+- `option_current_em()` → 东方财富网-行情中心-期权市场
+- `option_daily_stats_sse([date='20240626'])` → 上海证券交易所-产品-股票期权-每日统计
+- `option_daily_stats_szse([date='20240626'])` → 深圳证券交易所-市场数据-期权数据-日度概况
+- `option_finance_board([symbol='嘉实沪深300ETF期权'], [end_month='2306'])` → 期权当前交易日的行情数据
+- `option_finance_minute_sina([symbol='10002530'])` → 指定期权的分钟频率数据
+- `option_finance_sse_underlying([symbol='华夏科创50ETF期权'])` → 期权标的当日行情
+- `option_hist_czce([symbol='白糖期权'], [trade_date='20191017'])` → 郑州商品交易所-期权-日频行情数据
+- `option_hist_dce([symbol='聚丙烯期权'], [trade_date='20251016'])` → 大连商品交易所-期权-日频行情数据
+- `option_hist_gfex([symbol='工业硅'], [trade_date='20230724'])` → 广州期货交易所-日频率-量价数据
+- `option_hist_shfe([symbol='铝期权'], [trade_date='20250418'])` → 上海期货交易所-期权-日频行情数据
+- `option_hist_yearly_czce([symbol='SR'], [year='2021'])` → 郑州商品交易所-交易数据-历史行情下载-期权历史行情下载
+- `option_lhb_em([symbol='510050'], [indicator='期权交易情况-认沽交易量'], [trade_date='20220121'])` → 东方财富网-数据中心-期货期权-期权龙虎榜单
+- `option_margin([symbol='原油期权'])` → 获取商品期权保证金
+- `option_margin_symbol()` → 获取商品期权品种代码和名称
+- `option_minute_em([symbol='MO2404-P-4450'])` → 东方财富网-行情中心-期权市场-分时行情
+- `option_premium_analysis_em()` → 东方财富网-数据中心-特色数据-期权折溢价
+- `option_risk_analysis_em()` → 东方财富网-数据中心-特色数据-期权风险分析
+- `option_risk_indicator_sse([date='20240626'])` → 上海证券交易所-产品-股票期权-期权风险指标
+- `option_sse_codes_sina([symbol='看涨期权'], [trade_date='202202'], [underlying='510050'])` → 上海证券交易所-所有看涨和看跌合约的代码
+- `option_sse_daily_sina([symbol='10003889'])` → 指定期权的日频率数据
+- `option_sse_expire_day_sina([trade_date='202102'], [symbol='50ETF'], [exchange='null'])` → 指定到期月份指定品种的剩余到期时间
+- `option_sse_greeks_sina([symbol='10003045'])` → 期权基本信息表
+- `option_sse_list_sina([symbol='50ETF'], [exchange='null'])` → 新浪财经-期权-上交所-50ETF-合约到期月份列表
+- `option_sse_minute_sina([symbol='10003720'])` → 指定期权品种在当前交易日的分钟数据, 只能获取当前交易日的数据, 不能获取历史分钟数据
+- `option_sse_spot_price_sina([symbol='10003720'])` → 新浪财经-期权-期权实时数据
+- `option_sse_underlying_spot_price_sina([symbol='sh510300'])` → 期权标的物的实时数据
+- `option_value_analysis_em()` → 东方财富网-数据中心-特色数据-期权价值分析
+- `option_vol_gfex([symbol='碳酸锂'], [trade_date='20230724'])` → 广州期货交易所-日频率-合约隐含波动率
+- `option_vol_shfe([symbol='铝期权'], [trade_date='20250418'])` → 上海期货交易所-期权-日频行情数据
+
+## BOND (41 个)
+- `bond_buy_back_hist_em([symbol='204001'])` → 东方财富网-行情中心-债券市场-质押式回购-历史数据
+- `bond_cash_summary_sse([date='20210111'])` → 上登债券信息网-市场数据-市场统计-市场概览-债券现券市场概览
+- `bond_cb_adj_logs_jsl([symbol='128013'])` → 集思录-可转债转股价-调整记录
+- `bond_cb_index_jsl()` → 首页-可转债-集思录可转债等权指数
+- `bond_cb_jsl([cookie])` → 集思录可转债
+- `bond_cb_profile_sina([symbol='sz128039'])` → 新浪财经-债券-可转债-详情资料
+- `bond_cb_redeem_jsl()` → 集思录可转债-强赎
+- `bond_cb_summary_sina([symbol='sh155255'])` → 新浪财经-债券-可转债-债券概况
+- `bond_china_close_return([symbol='国债'], [period='1'], [start_date='20231101'], [end_date='20231101'])` → 收盘收益率曲线历史数据
+- `bond_china_close_return_map()` → 收盘收益率曲线历史数据
+- `bond_china_yield([start_date='20200204'], [end_date='20210124'])` → 中国债券信息网-国债及其他债券收益率曲线
+- `bond_composite_index_cbond([indicator='财富'], [period='总值'])` → 中国债券信息网-中债指数-中债指数族系-总指数-综合类指数-中债-综合指数
+- `bond_corporate_issue_cninfo([start_date='20210911'], [end_date='20211110'])` → 巨潮资讯-数据中心-专题统计-债券报表-债券发行-企业债发行
+- `bond_cov_comparison()` → 东方财富网-行情中心-债券市场-可转债比价表
+- `bond_cov_issue_cninfo([start_date='20210913'], [end_date='20211112'])` → 巨潮资讯-数据中心-专题统计-债券报表-债券发行-可转债发行
+- `bond_cov_stock_issue_cninfo()` → 巨潮资讯-数据中心-专题统计-债券报表-债券发行-可转债转股
+- `bond_deal_summary_sse([date='20210104'])` → 上登债券信息网-市场数据-市场统计-市场概览-债券成交概览
+- `bond_debt_nafmii([page='1'])` → 中国银行间市场交易商协会-非金融企业债务融资工具注册信息系统
+- `bond_gb_us_sina([symbol='美国10年期国债'])` → 新浪财经-债券-美国国债收益率行情数据
+- `bond_gb_zh_sina([symbol='中国10年期国债'])` → 新浪财经-债券-中国国债收益率行情数据
+- `bond_info_cm([bond_name=''], [bond_code=''], [bond_issue=''], [bond_type=''], [coupon_type='']...)` → 中国外汇交易中心暨全国银行间同业拆借中心-数据-债券信息-信息查询
+- `bond_info_cm_query([symbol='评级等级'])` → 中国外汇交易中心暨全国银行间同业拆借中心-查询相关指标的参数
+- `bond_info_detail_cm([symbol='淮安农商行CDSD2022021012'])` → 中国外汇交易中心暨全国银行间同业拆借中心-数据-债券信息-信息查询-债券详情
+- `bond_local_government_issue_cninfo([start_date='20210911'], [end_date='20211110'])` → 巨潮资讯-数据中心-专题统计-债券报表-债券发行-地方债发行
+- `bond_new_composite_index_cbond([indicator='财富'], [period='总值'])` → 中国债券信息网-中债指数-中债指数族系-总指数-综合类指数-中债-新综合指数
+- `bond_sh_buy_back_em()` → 东方财富网-行情中心-债券市场-上证质押式回购
+- `bond_spot_deal()` → 中国外汇交易中心暨全国银行间同业拆借中心-市场数据-债券市场行情-现券市场成交行情
+- `bond_spot_quote()` → 中国外汇交易中心暨全国银行间同业拆借中心-市场数据-债券市场行情-现券市场做市报价
+- `bond_sz_buy_back_em()` → 东方财富网-行情中心-债券市场-深证质押式回购
+- `bond_treasure_issue_cninfo([start_date='20210910'], [end_date='20211109'])` → 巨潮资讯-数据中心-专题统计-债券报表-债券发行-国债发行
+- `bond_zh_cov()` → 东方财富网-数据中心-新股数据-可转债数据
+- `bond_zh_cov_info([symbol='123121'], [indicator='基本信息'])` → https://data.eastmoney.com/kzz/detail/123121.html
+- `bond_zh_cov_info_ths()` → 同花顺-数据中心-可转债
+- `bond_zh_cov_value_analysis([symbol='113527'])` → https://data.eastmoney.com/kzz/detail/113527.html
+- `bond_zh_hs_cov_daily([symbol='sh010107'])` → 新浪财经-债券-沪深可转债的历史行情数据, 大量抓取容易封 IP
+- `bond_zh_hs_cov_min([symbol='sz128039'], [period='15'], [adjust=''], [start_date='1979-09-01 09:32:00'], [end_date='2222-01-01 09:32:00'])` → 东方财富网-可转债-分时行情
+- `bond_zh_hs_cov_pre_min([symbol='sh113570'])` → 东方财富网-可转债-分时行情-盘前
+- `bond_zh_hs_cov_spot()` → 新浪财经-债券-沪深可转债的实时行情数据; 大量抓取容易封IP
+- `bond_zh_hs_daily([symbol='sh010107'])` → 新浪财经-债券-沪深债券-历史行情数据, 大量抓取容易封 IP
+- `bond_zh_hs_spot([start_page='1'], [end_page='10'])` → 新浪财经-债券-沪深债券-实时行情数据, 大量抓取容易封IP
+- `bond_zh_us_rate([start_date='19901219'])` → 东方财富网-数据中心-经济数据-中美国债收益率
+
+## SPOT (16 个)
+- `spot_corn_price_soozhu()` → 搜猪-生猪大数据-全国玉米价格走势
+- `spot_golden_benchmark_sge()` → 上海黄金交易所-数据资讯-上海金基准价-历史数据
+- `spot_goods([symbol='波罗的海干散货指数'])` → 新浪财经-商品现货价格指数
+- `spot_hist_sge([symbol='Au99.99'])` → 上海黄金交易所-数据资讯-行情走势-历史数据
+- `spot_hog_crossbred_soozhu()` → 搜猪-生猪大数据-全国后备二元母猪
+- `spot_hog_lean_price_soozhu()` → 搜猪-生猪大数据-全国瘦肉型肉猪
+- `spot_hog_soozhu()` → 搜猪-生猪大数据-各省均价实时排行榜
+- `spot_hog_three_way_soozhu()` → 搜猪-生猪大数据-全国三元仔猪
+- `spot_hog_year_trend_soozhu()` → 搜猪-生猪大数据-今年以来全国出栏均价走势
+- `spot_mixed_feed_soozhu()` → 搜猪-生猪大数据-全国育肥猪合料（含自配料）半月走势
+- `spot_price_qh([symbol='螺纹钢'])` → 99 期货-数据-期现-现货走势
+- `spot_price_table_qh()` → 99 期货-数据-期现-交易所与品种对照表
+- `spot_quotations_sge([symbol='Au99.99'])` → 上海黄金交易所-实时行情数据
+- `spot_silver_benchmark_sge()` → 上海黄金交易所-数据资讯-上海银基准价-历史数据
+- `spot_soybean_price_soozhu()` → 搜猪-生猪大数据-全国豆粕价格走势
+- `spot_symbol_table_sge()` → 上海黄金交易所-数据资讯-行情走势-品种表
+
+## FX (5 个)
+- `fx_c_swap_cm()` → 中国外汇交易中心暨全国银行间同业拆借中心-基准-外汇市场-外汇掉期曲线-外汇掉期 C-Swap 定盘曲线
+- `fx_pair_quote()` → 中国外汇交易中心暨全国银行间同业拆借中心-市场数据-市场行情-债券市场行情-外币对即期报价
+- `fx_quote_baidu([symbol='人民币'])` → 百度股市通-外汇-行情榜单
+- `fx_spot_quote()` → 中国外汇交易中心暨全国银行间同业拆借中心-市场数据-市场行情-外汇市场行情-人民币外汇即期报价
+- `fx_swap_quote()` → 中国外汇交易中心暨全国银行间同业拆借中心-市场数据-市场行情-债券市场行情-人民币外汇远掉报价
+
+## CURRENCY (8 个)
+- `currency_boc_safe()` → 人民币汇率中间价
+- `currency_boc_sina([symbol='美元'], [start_date='20230304'], [end_date='20231110'])` → 新浪财经-中行人民币牌价历史数据查询
+- `currency_convert([base='USD'], [to='CNY'], [amount='10000'], [api_key=''])` → currencies data from currencyscoop.com
+- `currency_currencies([c_type='fiat'], [api_key=''])` → currencies data from currencyscoop.com
+- `currency_history([base='USD'], [date='2023-02-03'], [symbols=''], [api_key=''])` → Latest data from currencyscoop.com
+- `currency_latest([base='USD'], [symbols=''], [api_key=''])` → Latest data from currencyscoop.com
+- `currency_pair_map([symbol='美元'])` → 指定货币的所有可获取货币对的数据
+- `currency_time_series([base='USD'], [start_date='2023-02-03'], [end_date='2023-03-04'], [symbols=''], [api_key=''])` → Time-series data from currencyscoop.com
+
+## ENERGY (8 个)
+- `energy_carbon_bj()` → 北京市碳排放权电子交易平台-北京市碳排放权公开交易行情
+- `energy_carbon_domestic([symbol='湖北'])` → 碳交易网-行情信息
+- `energy_carbon_eu()` → 深圳碳排放交易所-国际碳情
+- `energy_carbon_gz()` → 广州碳排放权交易中心-行情信息
+- `energy_carbon_hb()` → 湖北碳排放权交易中心-现货交易数据-配额-每日概况
+- `energy_carbon_sz()` → 深圳碳排放交易所-国内碳情
+- `energy_oil_detail([date='20220517'])` → 全国各地区的汽油和柴油油价
+- `energy_oil_hist()` → 汽柴油历史调价信息
+
+## 其他域
+
+### air (5 个)
+- `air_city_table()` → 真气网-空气质量历史数据查询-全部城市列表
+- `air_quality_hebei()` → 河北省空气质量预报信息发布系统-空气质量预报, 未来 6 天
+- `air_quality_hist([city='杭州'], [period='day'], [start_date='20190327'], [end_date='20200427'])` → 真气网-空气历史数据
+- `air_quality_rank([date=''])` → 真气网-168 城市 AQI 排行榜
+- `air_quality_watch_point([city='杭州'], [start_date='20220408'], [end_date='20220409'])` → 真气网-监测点空气质量-细化到具体城市的每个监测点
+
+### amac (14 个)
+- `amac_aoin_info()` → 中国证券投资基金业协会-信息公示-基金产品公示-证券公司直投基金
+- `amac_fund_abs()` → 中国证券投资基金业协会-信息公示-基金产品公示-资产支持专项计划公示信息
+- `amac_fund_account_info()` → 中国证券投资基金业协会-信息公示-基金产品公示-基金公司及子公司集合资管产品公示
+- `amac_fund_info([start_page='1'], [end_page='2000'])` → 中国证券投资基金业协会-信息公示-基金产品-私募基金管理人基金产品
+- `amac_fund_sub_info()` → 中国证券投资基金业协会-信息公示-基金产品公示-证券公司私募投资基金
+- `amac_futures_info()` → 中国证券投资基金业协会-信息公示-基金产品公示-期货公司集合资管产品公示
+- `amac_manager_cancelled_info()` → 中国证券投资基金业协会-信息公示-诚信信息公示-已注销私募基金管理人名单
+- `amac_manager_classify_info()` → 中国证券投资基金业协会-信息公示-私募基金管理人公示-私募基金管理人分类公示
+- `amac_manager_info()` → 中国证券投资基金业协会-信息公示-私募基金管理人公示-私募基金管理人综合查询
+- `amac_member_info()` → 中国证券投资基金业协会-信息公示-会员信息-会员机构综合查询
+- `amac_member_sub_info()` → 中国证券投资基金业协会-信息公示-私募基金管理人公示-证券公司私募基金子公司管理人信息公示
+- `amac_person_bond_org_list()` → 中国证券投资基金业协会-信息公示-从业人员信息-债券投资交易相关人员公示
+- `amac_person_fund_org_list([symbol='公募基金管理公司'])` → 中国证券投资基金业协会-信息公示-从业人员信息-基金从业人员资格注册信息
+- `amac_securities_info()` → 中国证券投资基金业协会-信息公示-基金产品公示-证券公司集合资管产品公示
+
+### article (5 个)
+- `article_epu_index([symbol='China'])` → 经济政策不确定性指数
+- `article_ff_crr()` → FF多因子模型
+- `article_oman_rv([symbol='FTSE'], [index='rk_th2'])` → Oxford-Man Institute of Quantitative Finance Realized Library 的数据
+- `article_oman_rv_short([symbol='FTSE'])` → Oxford-Man Institute of Quantitative Finance Realized Library 的数据
+- `article_rlab_rv([symbol='39693'])` → 修大成主页-Risk Lab-Realized Volatility
+
+### bank (1 个)
+- `bank_fjcf_table_detail([page=5], [item='分局本级'], [begin=1])` → 获取 首页-政务信息-行政处罚-银保监分局本级-XXXX行政处罚信息公开表 数据
+
+### business (1 个)
+- `business_value_artist()` → 艺恩-艺人-艺人商业价值
+
+### car (7 个)
+- `car_market_cate_cpca([symbol='轿车'], [indicator='批发'])` → 乘联会-统计数据-车型大类
+- `car_market_country_cpca()` → 乘联会-统计数据-国别细分市场
+- `car_market_fuel_cpca([symbol='整体市场'])` → 乘联会-统计数据-新能源细分市场
+- `car_market_man_rank_cpca([symbol='狭义乘用车-单月'], [indicator='批发'])` → 乘联会-统计数据-厂商排名
+- `car_market_segment_cpca([symbol='轿车'])` → 乘联会-统计数据-级别细分市场
+- `car_market_total_cpca([symbol='狭义乘用车'], [indicator='产量'])` → 乘联会-统计数据-总体市场
+- `car_sale_rank_gasgoo([symbol='车企榜'], [date='202109'])` → 盖世汽车-汽车行业制造企业数据库-销量数据
+
+### crypto (3 个)
+- `crypto_bitcoin_cme([date='20230830'])` → 芝加哥商业交易所-比特币成交量报告
+- `crypto_bitcoin_hold_report()` → 金十数据-比特币持仓报告
+- `crypto_js_spot()` → 主流加密货币的实时行情数据, 一次请求返回具体某一时刻行情数据
+
+### drewry (1 个)
+- `drewry_wci_index([symbol='composite'])` → Drewry 集装箱指数
+
+### forbes (1 个)
+- `forbes_rank([symbol='2021福布斯中国创投人100'])` → 福布斯中国-榜单
+
+### forex (2 个)
+- `forex_hist_em([symbol='USDCNH'])` → 东方财富网-行情中心-外汇市场-所有汇率-历史行情数据
+- `forex_spot_em()` → 东方财富网-行情中心-外汇市场-所有汇率-实时行情数据
+
+### fred (2 个)
+- `fred_md([date='2020-01'])` → The accompanying paper shows that factors extracted from the FRED-MD dataset share the same predictive content as those based on the various vintages of the so-called Stock-Watson data. In addition, it suggests that diffusion indexes constructed as the partial sum of the factor estimates can potentially be useful for the study of business cycle chronology.
+- `fred_qd([date='2020-01'])` → FRED-QD is a quarterly frequency companion to FRED-MD. It is designed to emulate the dataset used in "Disentangling the Channels of the 2007-2009 Recession" by Stock and Watson (2012, NBER WP No. 18094) but also contains several additional series. Comments or suggestions are welcome.
+
+### hf (1 个)
+- `hf_sp_500([year='2017'])` → S&P 500 minute data from 2012-2018
+
+### hurun (1 个)
+- `hurun_rank([indicator='胡润百富榜'], [year='2023'])` → 胡润排行榜
+
+### match (1 个)
+- `match_main_contract([symbol='cffex'])` → 新浪财经-期货-主力合约
+
+### migration (2 个)
+- `migration_area_baidu([area='重庆市'], [indicator='move_in'], [date='20230922'])` → 百度地图慧眼-百度迁徙-XXX迁入地详情
+- `migration_scale_baidu([area='广州市'], [indicator='move_in'])` → 百度地图慧眼-百度迁徙-迁徙规模
+
+### movie (8 个)
+- `movie_boxoffice_cinema_daily([date='20240219'])` → 电影票房-影院票房-日票房排行
+- `movie_boxoffice_cinema_weekly([date='20240219'])` → 电影票房-影院票房-周票房排行
+- `movie_boxoffice_daily([date='20240219'])` → 电影票房-单日票房
+- `movie_boxoffice_monthly([date='20240218'])` → 电影票房-单月票房
+- `movie_boxoffice_realtime()` → 电影票房-实时票房
+- `movie_boxoffice_weekly([date='20240218'])` → 电影票房-单周票房
+- `movie_boxoffice_yearly([date='20240218'])` → 电影票房-年度票房
+- `movie_boxoffice_yearly_first_week([date='20201018'])` → 电影票房-年度票房-年度首周票房
+
+### news (5 个)
+- `news_cctv([date='20240424'])` → 新闻联播文字稿
+- `news_economic_baidu([date='20251126'], [cookie])` → 百度股市通-经济数据
+- `news_report_time_baidu([date='20251126'], [cookie])` → 百度股市通-财报发行
+- `news_trade_notify_dividend_baidu([date='20251126'], [cookie])` → 百度股市通-交易提醒-分红派息
+- `news_trade_notify_suspend_baidu([date='20251126'], [cookie])` → 百度股市通-交易提醒-停复牌
+
+### nlp (2 个)
+- `nlp_answer([question='人工智能'])` → 智能问答
+- `nlp_ownthink([word='人工智能'], [indicator='entity'])` → Knowledge Graph interface for financial research
+
+### qdii (3 个)
+- `qdii_a_index_jsl([cookie=''])` → 集思录-T+0 QDII-亚洲市场-亚洲指数
+- `qdii_e_comm_jsl([cookie=''])` → 集思录-T+0 QDII-欧美市场-商品
+- `qdii_e_index_jsl([cookie=''])` → 集思录-T+0 QDII-欧美市场-欧美指数
+
+### qhkc (2 个)
+- `qhkc_tool_foreign([url='https://qhkch.com/ajax/toolbox_foreign.php'])` → 奇货可查-工具-外盘比价
+- `qhkc_tool_gdp([url='https://qhkch.com/dist/views/toolbox/gdp.html?v=1.10.7.1'])` → 奇货可查-工具-各地区经济数据
+
+### rate (1 个)
+- `rate_interbank([market='上海银行同业拆借市场'], [symbol='Shibor人民币'], [indicator='隔夜'])` → 东方财富-拆借利率一览-具体市场的具体品种的具体指标的拆借利率数据
+
+### reits (3 个)
+- `reits_hist_em([symbol='508097'])` → 东方财富网-行情中心-REITs-沪深 REITs-历史行情
+- `reits_hist_min_em([symbol='508097'])` → 东方财富网-行情中心-REITs-沪深 REITs-历史行情
+- `reits_realtime_em()` → 东方财富网-行情中心-REITs-沪深 REITs
+
+### repo (2 个)
+- `repo_rate_hist([start_date='20200930'], [end_date='20201029'])` → 中国外汇交易中心暨全国银行间同业拆借中心-回购定盘利率-历史数据
+- `repo_rate_query([symbol='回购定盘利率'])` → 中国外汇交易中心暨全国银行间同业拆借中心-回购定盘利率-历史数据
+
+### rv (2 个)
+- `rv_from_futures_zh_minute_sina([symbol='IF2008'], [period='5'])` → 从新浪财经获取期货的分钟级历史行情数据,并进行数据清洗和格式化
+- `rv_from_stock_zh_a_hist_min_em([symbol='000001'], [start_date='2021-10-20 09:30:00'], [end_date='2024-11-01 15:00:00'], [period='1'], [adjust='hfq'])` → 从东方财富网获取股票的分钟级历史行情数据,并进行数据清洗和格式化为计算 yz 已实现波动率所需的数据格式
+
+### sunrise (2 个)
+- `sunrise_daily([date='20240428'], [city='beijing'])` → 每日日出日落数据
+- `sunrise_monthly([date='20240428'], [city='beijing'])` → 每个指定 date 所在月份的每日日出日落数据, 如果当前月份未到月底, 则以预测值填充
+
+### sw (4 个)
+- `sw_index_first_info()` → 乐咕乐股-申万一级-分类
+- `sw_index_second_info()` → 乐咕乐股-申万二级-分类
+- `sw_index_third_cons([symbol='801120.SI'])` → 乐咕乐股-申万三级-行业成份
+- `sw_index_third_info()` → 乐咕乐股-申万三级-分类
+
+### tool (1 个)
+- `tool_trade_date_hist_sina()` → 新浪财经-交易日历-历史数据
+
+### video (2 个)
+- `video_tv()` → 艺恩-视频放映-电视剧集
+- `video_variety_show()` → 艺恩-视频放映-综艺节目
+
+### volatility (1 个)
+- `volatility_yz_rv(data)` → 波动率-已实现波动率-Yang-Zhang 已实现波动率(Yang-Zhang Realized Volatility)
+
+### xincaifu (1 个)
+- `xincaifu_rank([year='2022'])` → 新财富 500 人富豪榜

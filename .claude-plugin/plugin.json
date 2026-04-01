@@ -1,0 +1,8 @@
+{
+  "name": "invest-toolkit",
+  "version": "0.1.0",
+  "description": "股票投资基础工具包，提供 AKShare/Tushare 数据接口和巨潮财报下载，面向普通投资者",
+  "author": {
+    "name": "Invest Toolkit Team"
+  }
+}
